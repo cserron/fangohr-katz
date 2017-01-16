@@ -4,13 +4,8 @@
         {{ partial "head.html" . }}
     </head>
 <body>
-  
-    <div class="container-fluid">
-        <div class="row row-offcanvas row-offcanvas-left">
-            {{ block "main" . }}
-            {{ end }}
-        </div>
-    </div>
-    {{ partial "scripts.html" .}}
+    {{ block "main" . }}
+    {{ end }}
+    {{ partial "scripts.html" . }}
 </body>
 </html>
