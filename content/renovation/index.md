@@ -1,11 +1,10 @@
 +++
 date = "2017-01-12T13:25:19-03:00"
-title = "renovation"
+title = "Renovation + Capital Improvement"
 draft = true
 
 +++
 
-# Renovation + Capital Improvement
 
 ## Summary
 

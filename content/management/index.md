@@ -1,11 +1,10 @@
 +++
 date = "2017-01-12T13:25:36-03:00"
-title = "management"
+title = "Building and Management Support"
 draft = true
 
 +++
 
-# Building Management Support
 
 list of managers
 

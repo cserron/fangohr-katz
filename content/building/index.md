@@ -4,7 +4,6 @@ title = "Building & Interior Architecture"
 draft = true
 +++
 
-# Building & Interior Architecture
 
 ## A Legacy of Design
 
