@@ -1,0 +1,177 @@
+@import 'libs/variables';
+@import 'libs/functions';
+@import 'libs/mixins';
+
+@font-face {
+    font-family: Graphik;
+    font-weight: bold;
+    src: url("../fonts/Graphik-Semibold.otf") format("opentype");
+}
+@font-face {
+    font-family: Miller-TextBold;
+    font-weight: bold;
+    src: url("../fonts/Miller-TextBold.otf") format("opentype");
+}
+@font-face {
+    font-family: Miller-TextRoman;
+    font-weight:normal;
+    src: url("../fonts/Miller-TextRoman.otf") format("opentype");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.section {
+  height: 100vh;
+}
+.primary {
+  color: _palette(_katz-primary) !important;
+}
+.secondary {
+  color: _palette(_katz-secondary) !important;
+}
+.font-title,
+.font-title-item {
+  font-family: Graphik;
+  font-size: 56px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: -1.2px;
+  color: _palette(_katz-primary);
+}
+
+.font-subtitle {
+  font-family: Miller-Text;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.19;
+	letter-spacing: normal;
+  color: _palette(_katz-primary);
+}
+.font-content {
+  font-family: Miller-TextRoman;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: _palette(_katz-primary);
+}
+li:before {
+  content: '- ' ;
+}
+li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.cover,
+.menu {
+  padding-top: 10px;
+}
+.cover {
+  color: _palette(_katz-secondary);
+  background-color: _palette(_katz-primary);
+  border: 10px solid _palette(_katz-secondary);
+}
+.menu {
+  color: _palette(_katz-primary);
+  background-color: _palette(_katz-secondary);
+  border: 10px solid _palette(_katz-primary);
+}
+.check-list {
+  list-style-type: none;
+}
+.menu .check-list {
+  @include katz-checkbox(_palette(_katz-primary), _palette(_katz-secondary));
+}
+.cover .check-list {
+  @include katz-checkbox(_palette(_katz-secondary), _palette(_katz-primary));
+}
+
+
+.footer-menu {
+  font-family: Miller-TextRoman;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: _palette(_katz-primary);
+  line-height: 1.5;
+}
+
+.footer-menu-btn {
+  width: 77px;
+  height: 25px;
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  border: solid 1px _palette(_katz-secondary);
+  color: _palette(_katz-primary);
+  padding-bottom: 18px;
+}
+
+.footer-menu-btn:hover {
+  border: solid 1px _palette(_katz-primary);
+}
+
+.footer-menu-logo {
+  padding-bottom: 18px;
+  padding-left: 28px;
+  padding-bottom: 28px;
+}
+
+.footer-menu-nav {
+  padding-right: 22px;
+  bottom: -20px;
+}
+
+.carousel {
+  background-size: cover;
+  background-image: url('../assets/images/carousel-building-01.png');
+  height: 100vh;
+}
+
+.font-title {
+  padding-top: 20px;
+}
+.font-subtitle {
+  padding-bottom: 10px;
+}
+.font-title-carousel {
+  position: absolute;
+  top: 20px;
+  z-index: 1000;
+}
+.text-content {
+  top: 50vh;
+  position: absolute;
+}
+
+.team-content {
+  top: 33vh;
+  position: absolute;
+}
+.team-member-item {
+  padding-bottom:25px;
+}
+.team-member-image {
+  padding-bottom: 10px;
+}
+.team-member-name {
+  @extend .font-subtitle;
+  line-height: 1.31;
+  margin-top: 10px;
+}
+.team-member-role {
+  @extend .font-content;
+  line-height: 1.31;
+}
