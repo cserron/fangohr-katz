@@ -26,9 +26,14 @@ body {
 .section {
   height: 100vh;
 }
-
-.cover,
-.menu {
+.primary {
+  color: _palette(_katz-primary) !important;
+}
+.secondary {
+  color: _palette(_katz-secondary) !important;
+}
+.font-title,
+.font-title-item {
   font-family: Graphik;
   font-size: 56px;
   font-weight: 600;
@@ -36,6 +41,39 @@ body {
   font-stretch: normal;
   line-height: 1.23;
   letter-spacing: -1.2px;
+  color: _palette(_katz-primary);
+}
+
+.font-subtitle {
+  font-family: Miller-Text;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.19;
+	letter-spacing: normal;
+  color: _palette(_katz-primary);
+}
+.font-content {
+  font-family: Miller-TextRoman;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: _palette(_katz-primary);
+}
+li:before {
+  content: '- ' ;
+}
+li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.cover,
+.menu {
   padding-top: 10px;
 }
 .cover {
@@ -96,4 +134,44 @@ body {
   bottom: -20px;
 }
 
+.carousel {
+  background-size: cover;
+  background-image: url('../assets/images/carousel-building-01.png');
+  height: 100vh;
+}
 
+.font-title {
+  padding-top: 20px;
+}
+.font-subtitle {
+  padding-bottom: 10px;
+}
+.font-title-carousel {
+  position: absolute;
+  top: 20px;
+  z-index: 1000;
+}
+.text-content {
+  top: 50vh;
+  position: absolute;
+}
+
+.team-content {
+  top: 33vh;
+  position: absolute;
+}
+.team-member-item {
+  padding-bottom:25px;
+}
+.team-member-image {
+  padding-bottom: 10px;
+}
+.team-member-name {
+  @extend .font-subtitle;
+  line-height: 1.31;
+  margin-top: 10px;
+}
+.team-member-role {
+  @extend .font-content;
+  line-height: 1.31;
+}
