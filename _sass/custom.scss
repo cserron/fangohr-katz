@@ -23,7 +23,7 @@ body {
 }
 
 .section {
-    height: 100vh;
+  min-height: 100vh;
 }
 .primary {
   color: _palette(_katz-primary) !important;
@@ -158,8 +158,8 @@ li.font-content {
 }
 .text-content {
   top: 20vh;
-  position: absolute;
   @include respond-to(md) {
+    position: absolute;
     top: 50vh;
   }
 }
