@@ -81,9 +81,12 @@ li.font-content {
 .menu {
   padding-top: 10px;
 }
-.cover {
+.cover,
+.contact {
   color: _palette(_katz-secondary);
   background-color: _palette(_katz-primary);
+}
+.cover {
   border: 10px solid _palette(_katz-secondary);
 }
 .menu {
@@ -190,3 +193,95 @@ li.font-content {
   line-height: 1.31;
   padding-bottom: 27px;
 }
+
+.contact {
+  position:relative;
+  .font-title,
+  .font-subtitle,
+  .font-content {
+    color: _palette(_katz-secondary);
+  }
+
+  .font-title {
+    @include respond-to(md) {
+      padding-bottom: 70px;
+    }
+  }
+  // .font-content {
+  //   line-height: 1.5;
+  //   float: left;
+  //   width: 100%;
+  // }
+  .font-content-item {
+    @extend .font-content;
+    margin-bottom: 0;
+  }
+  .font-content-textarea {
+    @extend .font-content;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    @include respond-to(md) {
+      margin-top: 40px;
+    }
+  }
+  .contact-ul {
+    float: left;
+    margin-bottom: 0;
+  }
+  .btn-contact {
+    border: 1px solid _palette(_katz-secondary);
+    border-radius: 0;
+    color: _palette(_katz-secondary);
+    background-color: _palette(_katz-primary);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: _palette(_katz-third);
+    }
+  }
+}
+
+.contact-list .check-list {
+  @include katz-checkbox(_palette(_katz-secondary), _palette(_katz-primary), true);
+}
+
+.contact-textarea {
+  @extend .font-content;
+	background-color: _palette(_katz-third);
+	border: solid 1px _palette(_katz-secondary);
+  border-radius: 0px;
+  height: 120px;
+  outline: none;
+  &:focus{
+    background-color: _palette(_katz-fourth);
+	  border: solid 1px _palette(_katz-secondary);
+
+  }
+
+}
+.contact-top {
+  overflow: auto;
+  padding-bottom: 150px;
+  min-height:100vh;
+}
+.contact-bottom {
+  position: relative;
+  margin-top: -170px;
+  height: 170px;
+  clear: both;
+  padding-top:40px;
+  @include respond-to(md) {
+    margin-top: -80px;
+    height: 80px;
+    padding-top: 0px;
+  }
+  
+}
+#logo-footer {
+  max-width: 60px;
+  max-height: 36px;
+}
+
+
