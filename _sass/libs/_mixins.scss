@@ -18,7 +18,7 @@ $breakpoints: (
     }
 }
 
-@mixin katz-checkbox($primary-color, $secondary-color) {
+@mixin katz-checkbox($primary-color, $secondary-color, $contact: false) {
   /* Base for label styling */
 
     [type="checkbox"] {
@@ -36,6 +36,9 @@ $breakpoints: (
             cursor: pointer;
             @include respond-to(md) {
                 padding-left: 51px;
+            }
+            @if $contact {
+                padding-left: 20px !important;
             }
         }
     }
@@ -58,6 +61,13 @@ $breakpoints: (
                 width: 36px;
                 height: 36px;
             }
+            @if $contact {
+                width: 16px;
+                height: 16px;
+                border-radius: 0 !important;
+                top: 5px !important;
+                left: -15px !important;
+            }
         }
     }
 
@@ -68,7 +78,11 @@ $breakpoints: (
             background: $secondary-color;
             @include respond-to(md) {
                 border: 2px solid $primary-color;
-
+            }
+            @if $contact {
+                width: 16px;
+                height: 16px;
+                border: 1px solid $primary-color !important;
             }
 
         }
@@ -93,7 +107,13 @@ $breakpoints: (
                 top: 17px;
                 left: -7px;
             }
-
+            @if $contact {
+                font-size: 16px !important;
+                left: -13px !important;
+                top: 5px !important;
+                // top: -10px !important;
+            }
+            
         }
     }
 
@@ -118,6 +138,9 @@ $breakpoints: (
         &:checked:focus+label:before,
         &:not(:checked):focus+label:before {
             border: 2px solid _palette(secondary);
+        }
+        @if $contact {
+            border: 1px solid $primary-color;
         }
     }
 }
