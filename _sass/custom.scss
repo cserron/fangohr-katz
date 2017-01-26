@@ -21,9 +21,13 @@ html,
 body {
     height: 100%;
 }
-
+.section-wrapper {
+}
 .section {
   min-height: 100vh;
+  display: block;
+  width: 100%;
+  float: left;
 }
 .primary {
   color: _palette(_katz-primary) !important;
@@ -99,7 +103,8 @@ li.font-content {
   color: _palette(_katz-primary);
   background-color: _palette(_katz-secondary);
   border: 10px solid _palette(_katz-primary);
-  position: relative;
+  position: fixed;
+  z-index: 0;
 }
 .cover-ul,
 .menu-ul {
