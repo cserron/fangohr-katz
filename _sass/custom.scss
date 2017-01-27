@@ -21,13 +21,18 @@ html,
 body {
     height: 100%;
 }
-.section-wrapper {
+.content-wrapper {
+  margin-top: 100vh;
+  z-index: 2;
 }
 .section {
   min-height: 100vh;
   display: block;
   width: 100%;
   float: left;
+  z-index: 2;
+  background-color:white;
+  position: relative;
 }
 .primary {
   color: _palette(_katz-primary) !important;
@@ -93,8 +98,8 @@ li.font-content {
 }
 .cover,
 .contact {
-  color: _palette(_katz-secondary);
-  background-color: _palette(_katz-primary);
+  color: _palette(_katz-secondary) !important;
+  background-color: _palette(_katz-primary) !important;
 }
 .cover {
   border: 10px solid _palette(_katz-secondary);
@@ -104,7 +109,10 @@ li.font-content {
   background-color: _palette(_katz-secondary);
   border: 10px solid _palette(_katz-primary);
   position: fixed;
-  z-index: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index:-1000;
 }
 .cover-ul,
 .menu-ul {
@@ -338,4 +346,27 @@ li.font-content {
   margin-bottom: 10px;
 }
 
+.container-fluid .navigation-down {
+  margin-left: -15px;
+}
+
+.navigation-down {
+  position: absolute;
+  bottom: 40px;
+  // left: 50%;
+  width: 100%;
+}
+
+
+.popup-menu {
+  @extend .menu;
+  opacity: 0;
+  position: fixed;
+  transition: opacity 1000ms;
+  &.on {
+    opacity: 1;
+    transition: opacity 1000ms;
+    z-index: 10000;
+  }
+}
 
