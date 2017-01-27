@@ -105,7 +105,7 @@ $breakpoints: (
             height: 18px;
             z-index: 1;
             left: 3px;
-            top: 5px;
+            top: 6px;
             font-size: 24px;
             line-height: 0.9;
             transition: all .2s;
@@ -113,10 +113,10 @@ $breakpoints: (
             opacity:0;
             @include respond-to(md) {
                 font-size: 36px;
-                top: 17px;
-                left: 4px;
-                width: 30px;
-                height: 30px;
+                top: 20px;
+                left: 5px;
+                width: 26px;
+                height: 26px;
             }
             @if $contact {
                 font-size: 16px !important;
