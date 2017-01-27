@@ -21,15 +21,30 @@ html,
 body {
     height: 100%;
 }
-
+.content-wrapper {
+  margin-top: 100vh;
+  z-index: 2;
+}
 .section {
   min-height: 100vh;
+  display: block;
+  width: 100%;
+  float: left;
+  z-index: 2;
+  background-color:white;
+  position: relative;
 }
 .primary {
   color: _palette(_katz-primary) !important;
 }
 .secondary {
   color: _palette(_katz-secondary) !important;
+}
+.font-title-item {
+  letter-spacing: -1px;
+}
+.font-title {
+  letter-spacing: 0;
 }
 .font-title,
 .font-title-item {
@@ -39,7 +54,6 @@ body {
   font-style: normal;
   font-stretch: normal;
   line-height: 1.17;
-  letter-spacing: -1px;
   @include respond-to(md) {
     font-size: 56px;
     line-height: 1.23;
@@ -47,6 +61,7 @@ body {
   }
   color: _palette(_katz-primary);
 }
+
 
 .font-subtitle {
   font-family: Miller-Text;
@@ -83,8 +98,8 @@ li.font-content {
 }
 .cover,
 .contact {
-  color: _palette(_katz-secondary);
-  background-color: _palette(_katz-primary);
+  color: _palette(_katz-secondary) !important;
+  background-color: _palette(_katz-primary) !important;
 }
 .cover {
   border: 10px solid _palette(_katz-secondary);
@@ -93,7 +108,11 @@ li.font-content {
   color: _palette(_katz-primary);
   background-color: _palette(_katz-secondary);
   border: 10px solid _palette(_katz-primary);
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index:-1000;
 }
 .cover-ul,
 .menu-ul {
@@ -185,43 +204,6 @@ li.font-content {
   text-decoration-style: none;
 }
 
-// .footer-menu {
-//   font-family: Miller-TextRoman;
-//   font-size: 14px;
-//   font-weight: normal;
-//   font-style: normal;
-//   font-stretch: normal;
-//   color: _palette(_katz-primary);
-//   line-height: 1.29;
-//   position: absolute;
-//   bottom: 0;
-// }
-
-// .footer-menu-btn {
-//   width: 77px;
-//   height: 25px;
-//   list-style-type: none;
-//   display: inline-block;
-//   // margin: 0 auto;
-//   text-align: center;
-//   border: solid 1px _palette(_katz-primary);
-//   color: _palette(_katz-primary);
-//   margin-bottom: 15px;
-//   padding-top: 2px;
-// }
-// .footer-menu-logo {
-//   margin-bottom: 13px;
-// }
-
-// .footer-menu-btn:hover {
-//   border: solid 1px _palette(_katz-primary);
-// }
-// .footer-menu-text {
-//   font-family: Miller-TextRoman;
-//   font-size: 14px;
-//   line-height: 2.14;
-// }
-
 .carousel {
   background-size: cover;
   background-image: url('../assets/images/carousel-building-01.png');
@@ -286,11 +268,7 @@ li.font-content {
       padding-bottom: 70px;
     }
   }
-  // .font-content {
-  //   line-height: 1.5;
-  //   float: left;
-  //   width: 100%;
-  // }
+
   .font-content-item {
     @extend .font-content;
     margin-bottom: 0;
@@ -368,4 +346,27 @@ li.font-content {
   margin-bottom: 10px;
 }
 
+.container-fluid .navigation-down {
+  margin-left: -15px;
+}
+
+.navigation-down {
+  position: absolute;
+  bottom: 40px;
+  // left: 50%;
+  width: 100%;
+}
+
+
+.popup-menu {
+  @extend .menu;
+  opacity: 0;
+  position: fixed;
+  transition: opacity 1000ms;
+  &.on {
+    opacity: 1;
+    transition: opacity 1000ms;
+    z-index: 10000;
+  }
+}
 

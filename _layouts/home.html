@@ -2,16 +2,23 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    {% include cover.html %}
-    {% include menu.html %}
-    {% include building.html %} <!-- carousel + text -->
-    {% include renovation.html %}
-    {% include management.html %} <!-- carousel + text -->
-    {% include piece-of-mind.html %}
-    {% include about.html %}
-    {% include team.html %}
-    {% include contact.html %}
-    {% include footer.html %}
+    <section class="menu" id="menu">
+      {% include menu.html %}
+    </section>
+    <section class="popup-menu">
+      {% include menu.html %}
+    </section>
+    <section class="content-wrapper">
+      {% include cover.html %}
+      {% include building.html %} <!-- carousel + text -->
+      {% include renovation.html %}
+      {% include management.html %} <!-- carousel + text -->
+      {% include piece-of-mind.html %}
+      {% include about.html %}
+      {% include team.html %}
+      {% include contact.html %}
+      {% include footer.html %}
+    </section>
     {% include scripts.html %}
   </body>
 </html>
