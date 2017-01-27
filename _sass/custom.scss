@@ -25,6 +25,16 @@ body {
   margin-top: 100vh;
   z-index: 2;
 }
+.katz-container {
+  @extend .container-fluid;
+  // padding-right: 28px;
+  // padding-left: 28px;
+  float: left;
+  width: 100%;
+}
+.inner-content {
+  padding-left: 30px;
+}
 .section {
   min-height: 100vh;
   display: block;
@@ -204,10 +214,29 @@ li.font-content {
   text-decoration-style: none;
 }
 
-.carousel {
+.carousel-background {
   background-size: cover;
-  background-image: url('../assets/images/carousel-building-01.png');
   height: 100vh;
+}
+.building-cover {
+  @extend .carousel-background;
+  background-image: url('../assets/images/carousel-building-01.png');
+}
+.renovation-cover {
+  @extend .carousel-background;
+  background-image: url('../assets/images/carousel-building-01.png');
+}
+.management-cover {
+  @extend .carousel-background;
+  background-image: url('../assets/images/carousel-building-01.png');
+}
+.code-review-cover {
+  @extend .carousel-background;
+  background-image: url('../assets/images/carousel-building-01.png');
+}
+.piece-of-mind-cover {
+  @extend .carousel-background;
+  background-image: url('../assets/images/carousel-building-01.png');
 }
 
 .font-title {
@@ -371,3 +400,16 @@ li.font-content {
   }
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  @include respond-to(md) {
+    top: -100px;
+  }
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../assets/images/arrow-left-blue.svg");
+}
+.carousel-control-next-icon {
+  background-image: url("../assets/images/arrow-right-blue.svg");
+}
