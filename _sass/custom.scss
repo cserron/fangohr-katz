@@ -379,9 +379,12 @@ li.font-content {
 
 .navigation-down {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   // left: 50%;
   width: 100%;
+  @include respond-to(md) {
+    bottom: 40px;
+  }
 }
 
 
@@ -410,6 +413,7 @@ li.font-content {
 }
 .carousel-control-prev,
 .carousel-control-next {
+  width: 5%;
   @include respond-to(md) {
     top: -100px;
   }
