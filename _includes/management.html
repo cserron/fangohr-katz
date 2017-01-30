@@ -1,91 +1,19 @@
 <section class="section" id="management">
-  <div id="carousel3" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <div class="katz-container carousel-background management-cover">
-          <div class="inner-content">
-            <h2 class="font-title">Building Management Support</h2>
-            <div class="navigation-down text-center">
-              <a href="#" class="cover-anchor"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/arrow-down-white.svg" alt="Menu"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <section class="section">
-          <div class="katz-container">
-            <div class="inner-content">
-              <h2 class="font-title">Building Management Support</h2>
-              <div class="text-content">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h3 class="font-subtitle">Building Solutions</h3>
-                    <p class="font-content p-content">Katz Architecture works closely with building managers, co-op and condo boards, and design professionals to ensure they are prepared for everything from long-term masterplanning to last-minute emergencies.</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h3 class="font-subtitle">Our Services Include:</h3>
-                    <ul>
-                      <li class="font-content">Review of shareholder projects</li>
-                      <li class="font-content">Common space design</li>
-                      <li class="font-content">DOB & LPC filings, clearance, & approval</li>
-                      <li class="font-content">Emergency repairs & compliance</li>
-                      <li class="font-content">Construction phase oversight</li>
-                    </ul>
-                  </div>
+    <div id="carousel3" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active bkg-cover management-cover">
+                <div class="katz-container ">
+                    <h2 class="font-title">Building Management Support</h2>
+                    {% include utils/down-arrow.html img-color="white" %}
                 </div>
-              </div>
             </div>
-            <!--<div class="row management-link-footer">
-              <a href="#" class="font-subtitle">Buildings Managed with KA</a>
-            </div>-->
-          </div>
-          <div class="navigation-down text-center">
-            <a href="#" class="cover-anchor"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/arrow-down-blue.svg" alt="Menu"></a>
-          </div>
-        </section>
-      </div>
-      <div class="carousel-item">
-        <section class="section">
-          <div class="katz-container">
-            <div class="inner-content">
-              <h2 class="font-title">Properties</h2>
-              <div class="text-content">
-                TODO
-                <!--<div class="row">
-                  <div class="col-md-4">
-                    <h3 class="font-subtitle">Building Solutions</h3>
-                    <p class="font-content p-content">Katz Architecture works closely with building managers, co-op and condo boards, and design professionals to ensure they are prepared for everything from long-term masterplanning to last-minute emergencies.</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h3 class="font-subtitle">Our Services Include:</h3>
-                    <ul>
-                      <li class="font-content">Review of shareholder projects</li>
-                      <li class="font-content">Common space design</li>
-                      <li class="font-content">DOB & LPC filings, clearance, & approval</li>
-                      <li class="font-content">Emergency repairs & compliance</li>
-                      <li class="font-content">Construction phase oversight</li>
-                    </ul>
-                  </div>
-                </div>-->
-              </div>
+            <div class="carousel-item">
+                {% include management/item1.html %}
             </div>
-            <!--<div class="row management-link-footer">
-              <a href="#" class="font-subtitle">Buildings Managed with KA</a>
-            </div>-->
-          </div>
-          <div class="navigation-down text-center">
-            <a href="#" class="cover-anchor"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/arrow-down-blue.svg" alt="Menu"></a>
-          </div>
-        </section>
-      </div>
+            <div class="carousel-item">
+                {% include management/item2.html %}
+            </div>
+        </div>
+        {% include carousel/paginator.html carouselId="#carousel3" %}
     </div>
-    <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
 </section>
