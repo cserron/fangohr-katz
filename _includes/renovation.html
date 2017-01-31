@@ -1,38 +1,16 @@
 <section class="section" id="renovation">
-  <div class="container-fluid">
-    <div class="row carousel">
-      <div class="container">
-        <h2 class="font-title ">Renovation + Capital Improvement</h2>
-      </div>
-    </div>
-  </div>
-  <div class="navigation-down text-center">
-      <a href="#" class="cover-anchor"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/arrow-down-white.svg" alt="Menu"></a>
-    </div>
-</section>
-<section class="section">
-  <div class="container">
-    <h2 class="font-title">Renovation + Capital Improvement</h2>
-    <div class="text-content">
-      <div class="row">
-        <div class="col-md-4">
-          <h3 class="font-subtitle">The Return of Design Investment</h3>
-          <p class="font-content p-content">From exclusive coops and condominiums to townhouses and museums, Katz Architecture works closely with property managers and building owners to upgrade their spaces and add value.</p>
+    <div id="carousel2" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active bkg-cover renovation-cover">
+                <div class="katz-container ">
+                    <h2 class="font-title">Renovation & Capital Improvement</h2>
+                    {% include utils/down-arrow.html img-color="white" %}
+                </div>
+            </div>
+            <div class="carousel-item">
+                {% include renovation/item1.html %}
+            </div>
         </div>
-        <div class="col-md-4">
-          <h3 class="font-subtitle">Our Disciplines Include:</h3>
-          <ul>
-            <li class="font-content">Building expansions</li>
-            <li class="font-content">Historic preservation and restoration</li>
-            <li class="font-content">Repair assessment and correction</li>
-            <li class="font-content">Engineering and design coordination</li>
-            <li class="font-content">Project management</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="navigation-down text-center">
-      <a href="#" class="cover-anchor"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/arrow-down-blue.svg" alt="Menu"></a>
+        {% include carousel/paginator.html carouselId="#carousel2" %}
     </div>
 </section>

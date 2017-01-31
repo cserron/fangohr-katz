@@ -1,3 +1,6 @@
-    $('#myCarousel').carousel({
-    	pause: 'none'
-	})
+	$(function() {
+		$('.carousel').carousel({
+			pause: true,
+			interval: false
+		});
+	});
