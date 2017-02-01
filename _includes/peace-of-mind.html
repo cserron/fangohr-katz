@@ -1,0 +1,27 @@
+<section class="section" id="peace-of-mind">
+    <div id="carousel5" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active bkg-cover peace-of-mind-cover">
+                <div class="katz-container ">
+                    <div class="close close-white"></div>
+                    <h2 class="font-title">Peace of Mind</h2>
+                    {% include utils/down-arrow.html img-color="white" %}
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="close close-blue"></div>
+                {% include peace-of-mind/item1.html %}
+            </div>
+            <div class="carousel-item">
+                <div class="close close-blue"></div>
+                {% include peace-of-mind/item2.html %}
+            </div>
+            <div class="carousel-item">
+                <div class="close close-blue"></div>
+                {% include peace-of-mind/item3.html %}
+            </div>
+            
+        </div>
+        {% include carousel/paginator.html carouselId="#carousel5" %}
+    </div>
+</section>
