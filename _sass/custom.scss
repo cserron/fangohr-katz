@@ -450,60 +450,18 @@ li.font-content {
 .close-white {
   background-image: url("../assets/images/close-white.svg");
 }
-// .inner-content {
-//   position: absolute;
-// }
-// .property-image,
-// .team-member-image {
-//   filter:hue-rotate(270deg);
-// }
-// .img-filtered:hover:before {
-//   //filter:  grayscale(1) brightness(80%) hue-rotate(210deg) sepia(100%);
-//   background: rgba(0,0,255, 1);
-// }
-// .img-filtered:before {
-//   //filter:  grayscale(1) brightness(80%) hue-rotate(210deg) sepia(100%);
-//   background: rgba(0,0,255, 0.5);
-// }
-
-
-.tint {
-  // position: relative;
-  // float: left;
-  // margin-right: 20px;
-  // margin-bottom: 20px;
-  // cursor: pointer;
-  // box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-}
-
-// .tint:before {
-//   content: "";
-//   display: block;
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   background: rgba(0,0,255, 0.3);
-//   transition: all .3s linear;
-// }
-
-// .tint:hover:before { background: none; }
-
-// .t2:before { background: rgba(0,0,255, 0.3); }
-
 .img-filter:before {
   content: "";
   display: block;
+  opacity: 1;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background: rgba(0,0,255, 0.3);
-  transition: all 2.0s linear;
+  transition: opacity 1s linear;
 }
-.img-filter-hover:before {
-  background: none;
-  transition: all 2.0s linear;
+.off:before {
+  opacity:0;
 }
