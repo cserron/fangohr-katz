@@ -1,29 +1,13 @@
 @import 'libs/variables';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'libs/fonts';
 
-@font-face {
-    font-family: Graphik;
-    src: url("../fonts/Graphik-Semibold.otf") format("opentype");
-}
-@font-face {
-    font-family: Miller-TextBold;
-    font-weight: bold;
-    src: url("../fonts/Miller-TextBold.otf") format("opentype");
-}
-@font-face {
-    font-family: Miller-TextRoman;
-    font-weight:normal;
-    src: url("../fonts/Miller-TextRoman.otf") format("opentype");
-}
+
 
 html,
 body {
     height: 100%;
-}
-.content-wrapper {
-  margin-top: 100vh;
-  z-index: 2;
 }
 .katz-container {
   @extend .container-fluid;
@@ -31,6 +15,7 @@ body {
   padding-left: 28px;
   float: left;
   width: 100%;
+  position: relative;
 }
 
 .section {
@@ -38,7 +23,6 @@ body {
   display: block;
   width: 100%;
   float: left;
-  z-index: 2;
   background-color:white;
   position: relative;
 }
@@ -116,11 +100,10 @@ li.font-content {
   color: _palette(_katz-primary);
   background-color: _palette(_katz-secondary);
   border: 10px solid _palette(_katz-primary);
-  position: fixed;
-  top: 0;
+  position: relative;
+  //top: 0;
   width: 100%;
-  min-height: 100vh;
-  z-index:-1000;
+  height: 100vh;
 }
 .cover-ul,
 .menu-ul {
@@ -215,23 +198,35 @@ li.font-content {
 
 .bkg-cover{
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   
   &.renovation-cover {
-    background-image: url('../assets/images/carousel-building-01.png');
+    background-image: url('../assets/images/carousel/renovation-cover.jpg');
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/renovation-cover@2x.jpg');
+    }
   }
   &.building-cover {
     background-image: url('../assets/images/carousel-building-01.png');
+    // @include respond-to(md) {
+    //   background-image: url('../assets/images/carousel/building-cover@2x.jpg');
+    // }
   }
   &.management-cover {
-    background-image: url('../assets/images/carousel-building-01.png');
+    background-image: url('../assets/images/carousel/support-cover.jpg');
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/support-cover@2x.jpg');
+    }
   }
   &.code-review-cover {
     background-image: url('../assets/images/carousel-building-01.png');
   }
   &.peace-of-mind-cover {
-    background-image: url('../assets/images/carousel-building-01.png');
+    background-image: url('../assets/images/carousel/peaceofmind-cover.jpg');
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/peaceofmind-cover@2x.jpg');
+    }
   }
 }
 
@@ -241,11 +236,6 @@ li.font-content {
 }
 .font-subtitle {
   padding-bottom: 10px;
-}
-.font-title-carousel {
-  position: absolute;
-  top: 20px;
-  z-index: 1000;
 }
 .text-content {
   top: 20vh;
@@ -269,7 +259,8 @@ li.font-content {
 .team-member-item {
   padding-bottom:25px;
 }
-.team-member-image {
+.team-member-image,
+.property-image {
   padding-bottom: 14px;
 }
 .team-member-name {
@@ -331,19 +322,25 @@ li.font-content {
   @include katz-checkbox(_palette(_katz-secondary), _palette(_katz-primary), true);
 }
 
-.contact-textarea {
+.contact-inputs {
   @extend .font-content;
 	background-color: _palette(_katz-third);
 	border: solid 1px _palette(_katz-secondary);
   border-radius: 0px;
-  height: 120px;
   outline: none;
   &:focus{
     background-color: _palette(_katz-fourth);
 	  border: solid 1px _palette(_katz-secondary);
 
   }
-
+}
+.contact-textarea {
+  @extend .contact-inputs;
+  height: 120px;
+}
+.contact-text {
+  @extend .contact-inputs;
+  height: 30px;
 }
 .contact-top {
   overflow: auto;
@@ -379,16 +376,23 @@ li.font-content {
 
 .navigation-down {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   // left: 50%;
   width: 100%;
+  @include respond-to(md) {
+    bottom: 40px;
+  }
+}
+.navigation-down-cover {
+  @extend .navigation-down;
+  width: 95%;
 }
 
 
 .popup-menu {
   @extend .menu;
   opacity: 0;
-  position: fixed;
+  // position: fixed;
   transition: opacity 1000ms;
   &.on {
     opacity: 1;
@@ -410,14 +414,64 @@ li.font-content {
 }
 .carousel-control-prev,
 .carousel-control-next {
+  width: 5%;
+  position: absolute;
   @include respond-to(md) {
-    top: -100px;
+    top: 100px;
   }
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  position: absolute;
+  top: 40%;
+}
 .carousel-control-prev-icon {
   background-image: url("../assets/images/arrow-left-blue.svg");
 }
 .carousel-control-next-icon {
   background-image: url("../assets/images/arrow-right-blue.svg");
+}
+
+.close-white,
+.close-blue {
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  background-size: contain;
+  right: 10px;
+  top: 25px;
+  cursor: pointer;
+  z-index:999;
+  @include respond-to(md) {
+    width: 22px;
+    height: 22px;
+    right: 30px;
+    top: 34px;
+  }
+}
+.close-blue {
+  background-image: url("../assets/images/close-blue.svg");
+}
+.close-white {
+  background-image: url("../assets/images/close-white.svg");
+}
+.img-filter:before {
+  content: "";
+  display: block;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,255, 0.3);
+  transition: opacity 1s linear;
+}
+.off:before {
+  opacity:0;
+}
+.inner-content {
+  padding-bottom: 10px;
 }

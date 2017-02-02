@@ -1,9 +1,11 @@
 <section class="section contact" id="contact">
     <div class="katz-container contact-top">
+        <div class="close close-white link-to" data-target="menu"></div>
         <div class="inner-content">
             <h2 class="font-title">Contact</h2>
             <p class="font-subtitle">Need help with a project? Leave your details & we’ll be in contact:</p>
-            <form>
+            <form action="https://formspree.io/{{ site.email }}" method="POST">
+                <input type="hidden" name="_next" value='{{ site.url }}{{ site.baseurl }}/thanks/'/>
                 <div class="contact-list">
                     <ul class="contact-ul col-sm-4 col-md-4 col-lg-3">
                         <li class="check-list">
@@ -42,9 +44,14 @@
                         </li>
                     </ul>
                 </div>
+                <p class="font-content-textarea">Name</p>
+                <input type="email" class="form-control contact-text col-sm-6" id=""></input>
+                <p class="font-content-textarea">Email</p>
+                <input type="email" class="form-control contact-text col-sm-6" id=""></input>
                 <p class="font-content-textarea">Your Contact Info</p>
                 <textarea class="form-control contact-textarea col-sm-6" id="contact-textarea"></textarea>
                 <button class="btn btn-contact" type="submit">Send</button>
+                <!--<p class="error_msg invalid">Por favor ingresa un e-mail válido.</p>-->
             </form>
         </div>
     </div>
