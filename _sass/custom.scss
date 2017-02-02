@@ -228,6 +228,12 @@ li.font-content {
       background-image: url('../assets/images/carousel/peaceofmind-cover@2x.jpg');
     }
   }
+  &.thanks-cover {
+    background-image: url('../assets/images/carousel/contact-thanks.jpg');
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/contact-thanks@2x.jpg');
+    }
+  }
 }
 
 
@@ -467,7 +473,7 @@ li.font-content {
   left: 0;
   right: 0;
   background: rgba(0,0,255, 0.3);
-  transition: opacity 1s linear;
+  transition: opacity .6s linear;
 }
 .off:before {
   opacity:0;

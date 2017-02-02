@@ -36,7 +36,10 @@ function cross() {
 
 function disableCheckbox() {
     $(".check-list [type=checkbox]").on('click', function (e) {
-        e.preventDefault();
+        if ($(this).closest('section').attr('id') !== "contact") {
+            e.preventDefault();
+
+        }
     });
 }
 
