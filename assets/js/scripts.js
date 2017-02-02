@@ -12,11 +12,9 @@ function scroll() {
 function scrollTo() {
     $('.link-to').click(function () {
         var target = $(this).data('target');
-
         $('html, body').animate({
             scrollTop: $('#' + target).offset().top
         }, 1000);
-
     });
 }
 
@@ -59,11 +57,16 @@ function carouselTransition() {
     });
 }
 
+function checkCover() {
+    $(".cover-ul [type=checkbox]").prop("checked", true);
+}
+
 function init() {
     scroll();
     carousel();
     cross();
     disableCheckbox();
+    checkCover();
     scrollTo();
     carouselTransition();
 }
