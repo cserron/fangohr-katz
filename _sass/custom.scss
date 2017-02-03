@@ -9,10 +9,6 @@ html,
 body {
     height: 100%;
 }
-.content-wrapper {
-  margin-top: 100vh;
-  z-index: 2;
-}
 .katz-container {
   @extend .container-fluid;
   padding-right: 28px;
@@ -27,7 +23,6 @@ body {
   display: block;
   width: 100%;
   float: left;
-  z-index: 2;
   background-color:white;
   position: relative;
 }
@@ -105,11 +100,10 @@ li.font-content {
   color: _palette(_katz-primary);
   background-color: _palette(_katz-secondary);
   border: 10px solid _palette(_katz-primary);
-  position: fixed;
-  top: 0;
+  position: relative;
+  //top: 0;
   width: 100%;
-  min-height: 100vh;
-  z-index:-1000;
+  height: 100vh;
 }
 .cover-ul,
 .menu-ul {
@@ -204,23 +198,41 @@ li.font-content {
 
 .bkg-cover{
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   
   &.renovation-cover {
-    background-image: url('../assets/images/carousel-building-01.png');
+    background-image: url('../assets/images/carousel/renovation-cover.jpg');
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/renovation-cover@2x.jpg');
+    }
   }
   &.building-cover {
     background-image: url('../assets/images/carousel-building-01.png');
+    // @include respond-to(md) {
+    //   background-image: url('../assets/images/carousel/building-cover@2x.jpg');
+    // }
   }
   &.management-cover {
-    background-image: url('../assets/images/carousel-building-01.png');
+    background-image: url('../assets/images/carousel/support-cover.jpg');
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/support-cover@2x.jpg');
+    }
   }
   &.code-review-cover {
     background-image: url('../assets/images/carousel-building-01.png');
   }
   &.peace-of-mind-cover {
-    background-image: url('../assets/images/carousel-building-01.png');
+    background-image: url('../assets/images/carousel/peaceofmind-cover.jpg');
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/peaceofmind-cover@2x.jpg');
+    }
+  }
+  &.thanks-cover {
+    background-image: url('../assets/images/carousel/contact-thanks.jpg');
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/contact-thanks@2x.jpg');
+    }
   }
 }
 
@@ -230,11 +242,6 @@ li.font-content {
 }
 .font-subtitle {
   padding-bottom: 10px;
-}
-.font-title-carousel {
-  position: absolute;
-  top: 20px;
-  z-index: 1000;
 }
 .text-content {
   top: 20vh;
@@ -321,19 +328,25 @@ li.font-content {
   @include katz-checkbox(_palette(_katz-secondary), _palette(_katz-primary), true);
 }
 
-.contact-textarea {
+.contact-inputs {
   @extend .font-content;
 	background-color: _palette(_katz-third);
 	border: solid 1px _palette(_katz-secondary);
   border-radius: 0px;
-  height: 120px;
   outline: none;
   &:focus{
     background-color: _palette(_katz-fourth);
 	  border: solid 1px _palette(_katz-secondary);
 
   }
-
+}
+.contact-textarea {
+  @extend .contact-inputs;
+  height: 120px;
+}
+.contact-text {
+  @extend .contact-inputs;
+  height: 30px;
 }
 .contact-top {
   overflow: auto;
@@ -385,7 +398,7 @@ li.font-content {
 .popup-menu {
   @extend .menu;
   opacity: 0;
-  position: fixed;
+  // position: fixed;
   transition: opacity 1000ms;
   &.on {
     opacity: 1;
@@ -428,13 +441,13 @@ li.font-content {
 
 .close-white,
 .close-blue {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   display: block;
   position: absolute;
   background-size: contain;
-  right: 30px;
-  top: 34px;
+  right: 10px;
+  top: 25px;
   cursor: pointer;
   z-index:999;
   @include respond-to(md) {
@@ -450,60 +463,21 @@ li.font-content {
 .close-white {
   background-image: url("../assets/images/close-white.svg");
 }
-// .inner-content {
-//   position: absolute;
-// }
-// .property-image,
-// .team-member-image {
-//   filter:hue-rotate(270deg);
-// }
-// .img-filtered:hover:before {
-//   //filter:  grayscale(1) brightness(80%) hue-rotate(210deg) sepia(100%);
-//   background: rgba(0,0,255, 1);
-// }
-// .img-filtered:before {
-//   //filter:  grayscale(1) brightness(80%) hue-rotate(210deg) sepia(100%);
-//   background: rgba(0,0,255, 0.5);
-// }
-
-
-.tint {
-  // position: relative;
-  // float: left;
-  // margin-right: 20px;
-  // margin-bottom: 20px;
-  // cursor: pointer;
-  // box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-}
-
-// .tint:before {
-//   content: "";
-//   display: block;
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   background: rgba(0,0,255, 0.3);
-//   transition: all .3s linear;
-// }
-
-// .tint:hover:before { background: none; }
-
-// .t2:before { background: rgba(0,0,255, 0.3); }
-
 .img-filter:before {
   content: "";
   display: block;
+  opacity: 1;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background: rgba(0,0,255, 0.3);
-  transition: all 2.0s linear;
+  transition: opacity .6s linear;
 }
-.img-filter-hover:before {
-  background: none;
-  transition: all 2.0s linear;
+.off:before {
+  opacity:0;
+}
+.inner-content {
+  padding-bottom: 10px;
 }
