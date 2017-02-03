@@ -33,12 +33,16 @@ function cross() {
         $('#menu-' + sectionName).prop('checked', true);
     });
 }
+function check() {
+    $(".menu-ul .check-list [type=checkbox]").on('click', function () {
+        $(this).prop('checked', true);
+    });
+}
 
 function disableCheckbox() {
     $(".check-list [type=checkbox]").on('click', function (e) {
         if ($(this).closest('section').attr('id') !== "contact") {
             e.preventDefault();
-
         }
     });
 }
@@ -72,4 +76,5 @@ function init() {
     checkCover();
     scrollTo();
     carouselTransition();
+    check();
 }

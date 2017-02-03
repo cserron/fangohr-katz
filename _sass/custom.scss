@@ -220,7 +220,10 @@ li.font-content {
     }
   }
   &.code-review-cover {
-    background-image: url('../assets/images/carousel-building-01.png');
+    background-image: url('../assets/images/carousel/code-review-cover.jpg');
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/code-review-cover@2x.jpg');
+    }
   }
   &.peace-of-mind-cover {
     background-image: url('../assets/images/carousel/peaceofmind-cover.jpg');
@@ -240,6 +243,7 @@ li.font-content {
 .font-title {
   padding-top: 20px;
 }
+  
 .font-subtitle {
   padding-bottom: 10px;
 }
@@ -283,7 +287,8 @@ li.font-content {
   position:relative;
   .font-title,
   .font-subtitle,
-  .font-content {
+  .font-content,
+  a {
     color: _palette(_katz-secondary);
   }
 
@@ -480,4 +485,10 @@ li.font-content {
 }
 .inner-content {
   padding-bottom: 10px;
+}
+.border-blue {
+  border: 10px solid _palette(_katz-primary);
+}
+.border-white {
+  border: 10px solid _palette(_katz-secondary);
 }
