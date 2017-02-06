@@ -65,7 +65,22 @@ function carouselTransition() {
 }
 
 function checkCover() {
-    $(".cover-ul [type=checkbox]").prop("checked", true);
+    var checkboxes = $(".cover-ul [type=checkbox]");
+    checkboxes.each(function(index) {        
+        var checkbox = $(this);
+        var t = setTimeout(function() { 
+            checkbox.prop('checked', true);
+        }, 500 * index);        
+    });
+}
+
+function scrollFromCoverToMenu() {
+    $("#cover").on('click keydown swipe', function(e) {
+        console.log(e.type);
+        $('html, body').animate({
+            scrollTop: $('#menu').offset().top
+        }, 1000);
+    })
 }
 
 function init() {
@@ -77,4 +92,5 @@ function init() {
     scrollTo();
     carouselTransition();
     check();
+    scrollFromCoverToMenu();
 }
