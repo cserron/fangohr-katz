@@ -101,7 +101,6 @@ li.font-content {
   background-color: _palette(_katz-secondary);
   border: 10px solid _palette(_katz-primary);
   position: relative;
-  //top: 0;
   width: 100%;
   height: 100vh;
 }
@@ -492,4 +491,19 @@ li.font-content {
 }
 .border-white {
   border: 10px solid _palette(_katz-secondary);
+}
+
+.inactive-section {
+  position: fixed;
+  top: 101%;
+  z-index: 1000;
+  transition: all 1s;
+  &.activate-section {
+    top: 0;
+    display: block;
+  }
+  &.deactivate-section {
+    top: 101%;
+    display: none;
+  }
 }
