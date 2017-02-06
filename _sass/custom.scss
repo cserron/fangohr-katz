@@ -480,6 +480,9 @@ li.font-content {
   background: rgba(0,0,255, 0.3);
   transition: opacity .6s linear;
 }
+.img-slider {
+  object-fit: cover;
+}
 .off:before {
   opacity:0;
 }
