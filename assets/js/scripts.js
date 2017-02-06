@@ -76,17 +76,16 @@ function checkCover() {
 
 function scrollFromCoverToMenu() {
     $("#cover").on('click keydown', function(e) {
-        console.log(e.type);
         $('html, body').animate({
             scrollTop: $('#menu').offset().top
-        }, 1000);
-        var t = setTimeout(function() {
+        }, 1000, function() {
             $("#cover").css('display', 'none');
             $("body").scrollTop(0);
-        }, 1500);
-        
+            $(".menu").css('position', 'fixed');
+        });
     });
 }
+
 
 function init() {
     scroll();
