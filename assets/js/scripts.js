@@ -83,7 +83,8 @@ function scrollFromCoverToMenu() {
         var t = setTimeout(function() {
             $("#cover").css('display', 'none');
             $("body").scrollTop(0);
-        }, 1000);
+        }, 1500);
+        
     });
 }
 
