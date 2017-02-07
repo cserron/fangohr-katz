@@ -101,7 +101,6 @@ li.font-content {
   background-color: _palette(_katz-secondary);
   border: 10px solid _palette(_katz-primary);
   position: relative;
-  //top: 0;
   width: 100%;
   height: 100vh;
 }
@@ -142,6 +141,7 @@ li.font-content {
   width: 60px;
   height: 37px;
   margin-bottom: 13px;
+  margin-top: 6px;
   float: left;
   @include respond-to(sm) {
     width: 48px;
@@ -159,7 +159,7 @@ li.font-content {
   right: 20px;
   top: 58px;
   @include respond-to(sm) {
-    top: 8px;
+    top: 19px;
   }
 }
 
@@ -220,12 +220,21 @@ li.font-content {
     }
   }
   &.code-review-cover {
-    background-image: url('../assets/images/carousel-building-01.png');
+    background-image: url('../assets/images/carousel/code-review-cover.jpg');
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/code-review-cover@2x.jpg');
+    }
   }
   &.peace-of-mind-cover {
     background-image: url('../assets/images/carousel/peaceofmind-cover.jpg');
     @include respond-to(md) {
       background-image: url('../assets/images/carousel/peaceofmind-cover@2x.jpg');
+    }
+  }
+  &.thanks-cover {
+    background-image: url('../assets/images/carousel/contact-thanks.jpg');
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/contact-thanks@2x.jpg');
     }
   }
 }
@@ -234,6 +243,7 @@ li.font-content {
 .font-title {
   padding-top: 20px;
 }
+  
 .font-subtitle {
   padding-bottom: 10px;
 }
@@ -277,7 +287,8 @@ li.font-content {
   position:relative;
   .font-title,
   .font-subtitle,
-  .font-content {
+  .font-content,
+  a {
     color: _palette(_katz-secondary);
   }
 
@@ -467,11 +478,35 @@ li.font-content {
   left: 0;
   right: 0;
   background: rgba(0,0,255, 0.3);
-  transition: opacity 1s linear;
+  transition: opacity .6s linear;
+}
+.img-slider {
+  object-fit: cover;
 }
 .off:before {
   opacity:0;
 }
 .inner-content {
   padding-bottom: 10px;
+}
+.border-blue {
+  border: 10px solid _palette(_katz-primary);
+}
+.border-white {
+  border: 10px solid _palette(_katz-secondary);
+}
+
+.inactive-section {
+  position: fixed;
+  top: 101%;
+  z-index: 1000;
+  transition: all 1s;
+  &.activate-section {
+    top: 0;
+    display: block;
+  }
+  &.deactivate-section {
+    top: 101%;
+    display: none;
+  }
 }
