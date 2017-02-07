@@ -20,7 +20,6 @@ function closeSection() {
     $('.close-section').click(function() {
         var section = $(this).parents('section').attr('id');
         $('#'+section).removeClass('activate-section');
-        $('.menu-ul input').prop('checked', false);
         $('input#menu-' + section).prop('checked', true);
     });
 }
