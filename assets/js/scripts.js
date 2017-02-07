@@ -1,33 +1,61 @@
 $(document).ready(init);
 
+function windowWidth() {
+    return $(window).width();
+}
+
 function scroll() {
     $(".cover-anchor").click(function () {
         var section = $(this).parents('section');
-        var nextSection = section.next();
-        $(nextSection).addClass('activate-section');
-        $(section).removeClass('activate-section');
+        if (windowWidth() > 767) {
+            var nextSection = section.next();
+            $(nextSection).addClass('activate-section');
+            $(section).removeClass('activate-section');
+        } else {
+            $('html, body').animate({
+                scrollTop: section.next().offset().top
+            }, 1000);
+        }
     });
 }
 
 function openSection() {
     $('.open-section').click(function() {
         var target = $(this).data('target');
-        $('#'+target).addClass('activate-section');
+        if (windowWidth() > 767) {
+            $('#'+target).addClass('activate-section');
+        } else {
+            $('html, body').animate({
+                scrollTop: $('#'+target).offset().top
+            }, 1000);
+        }
     });
 }
 
 function closeSection() {
     $('.close-section').click(function() {
         var section = $(this).parents('section').attr('id');
-        $('#'+section).removeClass('activate-section');
         $('input#menu-' + section).prop('checked', true);
+        if (windowWidth() > 767) {
+            $('#'+section).removeClass('activate-section');
+        } else {
+            $('html, body').animate({
+                scrollTop: $('#menu').offset().top
+            }, 1000);
+        }
     });
 }
 
 function scrollTo() {
     $('.link-to').click(function () {
         var target = $(this).data('target');
-        $('#'+target).addClass('activate-section');
+        if (windowWidth() > 767) {
+            $('#'+target).addClass('activate-section');
+        } else {
+            $('html, body').animate({
+                scrollTop: $('#'+target).offset().top
+            }, 1000);
+        }
     });
 }
 
@@ -36,11 +64,6 @@ function carousel() {
         pause: true,
         interval: false
     });
-}
-
-function cross() {
-    var section = $(this).parents('section');
-    section.removeClass('activate-section');
 }
 
 function check() {
@@ -91,7 +114,9 @@ function scrollFromCoverToMenu() {
         }, 1000, function() {
             $("#cover").css('display', 'none');
             $("body").scrollTop(0);
-            $(".menu").css('position', 'fixed');
+            if (windowWidth() > 767) {
+                $(".menu").css('position', 'fixed');
+            }
         });
     });
 }
@@ -100,7 +125,6 @@ function scrollFromCoverToMenu() {
 function init() {
     scroll();
     carousel();
-    cross();
     disableCheckbox();
     checkCover();
     scrollTo();
