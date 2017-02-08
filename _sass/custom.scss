@@ -497,16 +497,18 @@ li.font-content {
 }
 
 .inactive-section {
-  position: fixed;
-  top: 101%;
-  z-index: 1000;
-  transition: all 1s;
-  &.activate-section {
-    top: 0;
-    display: block;
-  }
-  &.deactivate-section {
+  @include respond-to(sm) {
+    position: fixed;
     top: 101%;
-    display: none;
+    z-index: 1000;
+    transition: all 1s;
+    &.activate-section {
+      top: 0;
+      display: block;
+    }
+    &.deactivate-section {
+      top: 101%;
+      display: none;
+    }
   }
 }
