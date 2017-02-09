@@ -1,26 +1,29 @@
 <section class="section inactive-section" id="peace-of-mind">
+    <div class="carousel-item active bkg-cover peace-of-mind-cover  border-white">
+        <div class="katz-container ">
+            <h2 class="font-title secondary">Peace of Mind</h2>
+            {% include utils/down-arrow.html img-color="white" %}
+        </div>
+    </div>
+</section>
+<section class="section inactive-section" id="peace-of-mind2">
     <div id="carousel5" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active bkg-cover peace-of-mind-cover  border-white">
-                <div class="katz-container ">
-                    <div class="close close-white close-section" data-target="menu"></div>
-                    <h2 class="font-title secondary">Peace of Mind</h2>
-                    {% include utils/down-arrow.html img-color="white" %}
-                </div>
+            <div class="carousel-item active border-blue">
+                <div class="close close-blue close-section hidden-sm-up" data-target="menu"></div>
+                {% include peace-of-mind/item1.html %} 
+                {% include utils/down-cross.html img-color="blue" %}
             </div>
             <div class="carousel-item  border-blue">
-                <div class="close close-blue close-section" data-target="menu"></div>
-                {% include peace-of-mind/item1.html %}
+                <div class="close close-blue close-section hidden-sm-up" data-target="menu"></div>
+                {% include peace-of-mind/item2.html %} 
+                {% include utils/down-cross.html img-color="blue" %}
             </div>
             <div class="carousel-item  border-blue">
-                <div class="close close-blue close-section" data-target="menu"></div>
-                {% include peace-of-mind/item2.html %}
+                <div class="close close-blue close-section hidden-sm-up" data-target="menu"></div>
+                {% include peace-of-mind/item3.html %} 
+                {% include utils/down-cross.html img-color="blue" %}
             </div>
-            <div class="carousel-item  border-blue">
-                <div class="close close-blue close-section" data-target="menu"></div>
-                {% include peace-of-mind/item3.html %}
-            </div>
-            
         </div>
         {% include carousel/paginator.html carouselId="#carousel5" %}
     </div>

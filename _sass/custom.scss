@@ -458,8 +458,8 @@ li.font-content {
   @include respond-to(md) {
     width: 22px;
     height: 22px;
-    right: 30px;
-    top: 34px;
+    left: 50%;
+    top: -10px;
   }
 }
 .close-blue {
@@ -511,4 +511,12 @@ li.font-content {
       display: none;
     }
   }
+}
+
+.contact-close {
+    @extend .close-white;
+    left: auto;
+    right: 30px;
+    top: 30px;
+    
 }
