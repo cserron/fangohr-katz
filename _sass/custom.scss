@@ -208,10 +208,7 @@ li.font-content {
     }
   }
   &.building-cover {
-    background-image: url('../assets/images/carousel-building-01.png');
-    // @include respond-to(md) {
-    //   background-image: url('../assets/images/carousel/building-cover@2x.jpg');
-    // }
+    background-image: url('../assets/images/carousel/building-cover.jpg');
   }
   &.management-cover {
     background-image: url('../assets/images/carousel/support-cover.jpg');
@@ -468,23 +465,17 @@ li.font-content {
 .close-white {
   background-image: url("../assets/images/close-white.svg");
 }
-.img-filter:before {
-  content: "";
-  display: block;
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,255, 0.3);
-  transition: opacity .6s linear;
+
+.img-filter {
+  filter: grayscale(100%);
+  transition: all .6s;
+  &.deactivate {
+    filter: grayscale(0);
+  }
 }
+
 .img-slider {
   object-fit: cover;
-}
-.off:before {
-  opacity:0;
 }
 .inner-content {
   padding-bottom: 10px;
