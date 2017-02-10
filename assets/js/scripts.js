@@ -21,6 +21,7 @@ function scroll() {
 function openSection() {
     $('.open-section').click(function() {
         var target = $(this).data('target');
+        $(this).find('input').prop('checked', true);
         if (windowWidth() > 767) {
             $('#'+target).addClass('activate-section');
         } else {
@@ -34,8 +35,6 @@ function openSection() {
 function closeSection() {
     $('.close-section').click(function() {
         var section = $(this).parents('section').attr('id');
-        var originalSection = section.substring(0, section.length - 1);
-        $('input#menu-' + originalSection).prop('checked', true);
         if (windowWidth() > 767) {
             $('section').removeClass('activate-section');
         } else {
@@ -119,10 +118,12 @@ function down() {
     });
 }
 function scrollFromCoverToMenu() {
-    if (windowWidth() > 767) {
+    var scrolled = false;
+    if (windowWidth() > 767 && !scrolled) {
         $(window).scroll(down);
     }
     $("#cover").on('click keydown', down);
+    scrolled = true;
 }
 
 
