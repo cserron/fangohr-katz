@@ -122,6 +122,7 @@ function scrollFromCoverToMenu() {
     if (!scrolled) {
         if (windowWidth() > 767) {
             $(window).scroll(down);
+            scrolled = true;
         }
         $("#cover").on('click keydown', down);
     }
