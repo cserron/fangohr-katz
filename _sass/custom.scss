@@ -478,22 +478,38 @@ li.font-content {
   background-image: url("../assets/images/arrow-right-blue.svg");
 }
 
+.close-wrapper {
+  left: 50%;
+  background-color: rgba(0,0,0,0.15);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  cursor: pointer;
+  bottom: -20px;
+  @include respond-to(md) {
+  bottom: -20px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
 .close-white,
 .close-blue {
   width: 14px;
   height: 14px;
   display: block;
-  position: absolute;
+  position: relative;
   background-size: contain;
-  right: 10px;
-  top: 12px;
+  // right: 10px;
+  left: -7px;
+    top: 7px;
   cursor: pointer;
   z-index:999;
   @include respond-to(md) {
     width: 22px;
     height: 22px;
-    left: 50%;
-    top: -10px;
+    left: -7px;
+    top: 7px;
   }
 }
 .close-blue {
@@ -546,5 +562,22 @@ li.font-content {
     left: auto;
     right: 30px;
     top: 30px;
-    
+}
+
+.info-button {
+  background-image: url("../assets/images/arrow-left-blue.svg");
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  display: block;
+}
+
+.info {
+  opacity: 0;
+  transition: all 1s;
+  &.on {
+    opacity: 1;
+  }
 }
