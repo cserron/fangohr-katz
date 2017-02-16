@@ -119,10 +119,12 @@ function down() {
 }
 function scrollFromCoverToMenu() {
     var scrolled = false;
-    if (windowWidth() > 767 && !scrolled) {
-        $(window).scroll(down);
+    if (!scrolled) {
+        if (windowWidth() > 767) {
+            $(window).scroll(down);
+        }
+        $("#cover").on('click keydown', down);
     }
-    $("#cover").on('click keydown', down);
     scrolled = true;
 }
 
