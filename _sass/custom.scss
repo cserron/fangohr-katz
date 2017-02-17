@@ -34,14 +34,15 @@ body {
 }
 .font-title-item {
   letter-spacing: -1px;
+  font-size: 24px;
 }
 .font-title {
+  font-size: 34px;
   letter-spacing: 0;
 }
 .font-title,
 .font-title-item {
   font-family: Graphik;
-  font-size: 24px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -99,7 +100,7 @@ li.font-content {
 .menu {
   color: _palette(_katz-primary);
   background-color: _palette(_katz-secondary);
-  border: 10px solid _palette(_katz-primary);
+  border: 10px solid _palette(_katz-secondary);
   position: relative;
   width: 100%;
   height: 100vh;
@@ -148,6 +149,7 @@ li.font-content {
     height: 30px;
     background-size: contain;
     padding-right: 30px;
+    margin-top: 3px;
   }
   @include respond-to(md) {
     width: 60px;
@@ -159,6 +161,9 @@ li.font-content {
   right: 20px;
   top: 58px;
   @include respond-to(sm) {
+    top: 14px;
+  }
+  @include respond-to(md) {
     top: 19px;
   }
 }
@@ -202,28 +207,46 @@ li.font-content {
   width: 100%;
   
   &.renovation-cover {
-    background-image: url('../assets/images/carousel/renovation-cover.jpg');
+    background-image: url('../assets/images/carousel/renovation-mobile-cover.jpg');
+    @include respond-to(sm) {
+      background-image: url('../assets/images/carousel/renovation-mobile-cover@3x.jpg');
+    }
     @include respond-to(md) {
       background-image: url('../assets/images/carousel/renovation-cover@2x.jpg');
     }
   }
   &.building-cover {
-    background-image: url('../assets/images/carousel/building-cover.jpg');
+    background-image: url('../assets/images/carousel/building-mobile-cover.jpg');
+    @include respond-to(sm) {
+      background-image: url('../assets/images/carousel/building-mobile-cover@3x.jpg');
+    }
+    @include respond-to(md) {
+      background-image: url('../assets/images/carousel/building-cover@2x.jpg');
+    }
   }
   &.management-cover {
-    background-image: url('../assets/images/carousel/support-cover.jpg');
+    background-image: url('../assets/images/carousel/support-mobile-cover.jpg');
+    @include respond-to(sm) {
+      background-image: url('../assets/images/carousel/support-mobile-cover@3x.jpg');
+    }
     @include respond-to(md) {
       background-image: url('../assets/images/carousel/support-cover@2x.jpg');
     }
   }
   &.code-review-cover {
-    background-image: url('../assets/images/carousel/code-review-cover.jpg');
+    background-image: url('../assets/images/carousel/code-review-mobile-cover.jpg');
+    @include respond-to(sm) {
+      background-image: url('../assets/images/carousel/code-review-mobile-cover@3x.jpg');
+    }
     @include respond-to(md) {
       background-image: url('../assets/images/carousel/code-review-cover@2x.jpg');
     }
   }
   &.peace-of-mind-cover {
-    background-image: url('../assets/images/carousel/peaceofmind-cover.jpg');
+    background-image: url('../assets/images/carousel/peaceofmind-mobile-cover.jpg');
+    @include respond-to(sm) {
+      background-image: url('../assets/images/carousel/peaceofmind-mobile-cover@3x.jpg');
+    }
     @include respond-to(md) {
       background-image: url('../assets/images/carousel/peaceofmind-cover@2x.jpg');
     }
@@ -238,7 +261,9 @@ li.font-content {
 
 
 .font-title {
-  padding-top: 20px;
+  @include respond-to(md) {
+    padding-top: 20px;
+  }
 }
   
 .font-subtitle {
@@ -258,9 +283,21 @@ li.font-content {
 .team-content {
   padding-top: 0;
   padding-bottom: 60px;
+  margin-top: 130px;
   @include respond-to(md) {
-    padding-top: 140px;
+    margin-top: 30vh;
     padding-bottom: 0;
+  }
+}
+.team-content .col-3 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+.team-content .col-md-2 {
+  @include respond-to(md) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
   }
 }
 .team-member-item {
@@ -432,7 +469,7 @@ li.font-content {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   position: absolute;
-  top: 40%;
+  top: 40vh;
 }
 .carousel-control-prev-icon {
   background-image: url("../assets/images/arrow-left-blue.svg");
@@ -441,22 +478,38 @@ li.font-content {
   background-image: url("../assets/images/arrow-right-blue.svg");
 }
 
+.close-wrapper {
+  left: calc(50% - 18px);
+  background-color: rgba(0,0,0,0.15);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  cursor: pointer;
+  bottom: -20px;
+  @include respond-to(md) {
+  bottom: -20px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
 .close-white,
 .close-blue {
   width: 14px;
   height: 14px;
   display: block;
-  position: absolute;
+  position: relative;
   background-size: contain;
-  right: 10px;
-  top: 25px;
+  // right: 10px;
+  left: -7px;
+    top: 7px;
   cursor: pointer;
   z-index:999;
   @include respond-to(md) {
     width: 22px;
     height: 22px;
-    left: 50%;
-    top: -10px;
+    left: -7px;
+    top: 7px;
   }
 }
 .close-blue {
@@ -509,5 +562,50 @@ li.font-content {
     left: auto;
     right: 30px;
     top: 30px;
-    
+}
+
+.info-button {
+  background-image: url("../assets/images/info.svg");
+  opacity: 0.5;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  bottom: 25px;
+  left: 50px;
+  display: block;
+  z-index: 2000;
+}
+.info-div {
+  // opacity:1;
+  @extend .font-content;
+  color: #393939;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1000;
+    width: 100%;
+    height: 50vh;
+  padding: 28px;
+  display: block;
+  @include respond-to(md) {
+  width: 50%;
+  height: 30vh;
+  }
+}
+
+.info {
+  opacity: 0;
+  transition: all 0.5s;
+  &.info-active {
+    opacity: 0.98;
+  }
+}
+.close-wrapper-info {
+  @extend .close-wrapper;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: auto;
 }
