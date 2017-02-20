@@ -33,7 +33,7 @@ function openSection() {
 }
 
 function closeSection() {
-    $('.close-section').click(function() {
+    $('.close-wrapper').click(function() {
         var section = $(this).parents('section').attr('id');
         if (windowWidth() > 767) {
             $('section').removeClass('activate-section');
