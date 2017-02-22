@@ -147,6 +147,11 @@ function toggleInfoDiv() {
     });
 }
 
+function detectResize() {
+    $(window).resize(function() {
+        location.reload();
+    });
+}
 
 function init() {
     scroll();
@@ -160,4 +165,5 @@ function init() {
     openSection();
     closeSection();
     toggleInfoDiv();
+    detectResize();
 }
