@@ -309,7 +309,10 @@ li.font-content {
 .team-content {
   padding-top: 0;
   padding-bottom: 60px;
-  margin-top: 130px;
+  margin-top: 0;
+  @include respond-to(sm) {
+    margin-top: 0;
+  }
   @include respond-to(md) {
     margin-top: 20vh;
     padding-bottom: 0;
@@ -318,6 +321,10 @@ li.font-content {
 .team-content .col-3 {
   padding-left: 7.5px;
   padding-right: 7.5px;
+  @media (min-width: 567px) and (max-width: 576px) {
+    max-width: 16.666667%;
+
+  }
 }
 .team-content .col-md-2 {
   @include respond-to(md) {
@@ -487,6 +494,7 @@ li.font-content {
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
+  max-width: 15px;
   position: absolute;
   @include respond-to(md) {
     top: 100px;
@@ -497,17 +505,18 @@ li.font-content {
 .carousel-control-next-icon {
   position: absolute;
   top: 40vh;
+  max-width: 15px;
 }
 .carousel-control-prev-icon {
   background-image: url("../assets/images/arrow-left-blue.svg");
-  left: -3px;
+  left: 0;
   @include respond-to(md) {
     left: 5px;
   }
 }
 .carousel-control-next-icon {
   background-image: url("../assets/images/arrow-right-blue.svg");
-  right: -3px;
+  right: 0;
   @include respond-to(md) {
     right: 5px;
   }
@@ -536,8 +545,8 @@ li.font-content {
   position: relative;
   background-size: contain;
   // right: 10px;
-  left: -7px;
-    top: 7px;
+  left: -4px;
+    top: 4px;
   cursor: pointer;
   z-index:999;
   @include respond-to(md) {
@@ -564,6 +573,10 @@ li.font-content {
 
 .img-slider {
   object-fit: cover;
+  max-width: 100%;
+  max-height: calc(100vh - 20px);
+  height: 100vh;
+  object-position: 50% 50%;
 }
 .inner-content {
   padding-bottom: 10px;
@@ -576,7 +589,7 @@ li.font-content {
 }
 
 .inactive-section {
-  @include respond-to(sm) {
+  @include respond-to(md) {
     position: fixed;
     top: 101%;
     z-index: 1000;
@@ -606,7 +619,7 @@ li.font-content {
   height: 36px;
   position: absolute;
   bottom: 25px;
-  left: 50px;
+  left: 25px;
   display: block;
   z-index: 2000;
 }
@@ -639,10 +652,45 @@ li.font-content {
     z-index: 1000;
   }
 }
+.detail {
+  position: fixed;
+  opacity: 0;
+  z-index: -100;
+  transition: all 0.5s;
+  &.detail-active {
+    opacity: 1;
+    z-index: 2000;
+  }
+}
 .close-wrapper-info {
   @extend .close-wrapper;
   position: absolute;
   top: 10px;
   right: 10px;
   left: auto;
+}
+.close-wrapper-detail {
+  @extend .close-wrapper-info;
+}
+
+.font-title-detail {
+  @extend .font-title;
+  margin-bottom: 86px;
+  @media (min-width: 567px) and (max-width: 576px) {
+    margin-bottom: 40px;
+  }
+  @include respond-to(sm) {
+    margin-bottom: 30px;
+  } 
+}
+
+.col-xs-landscape {
+  @media (min-width: 567px) and (max-width: 576px) {
+    max-width: 25%;
+  }
+}
+
+.font-subtitle-detail {
+  @extend .font-subtitle;
+  margin-bottom: 30px;
 }
