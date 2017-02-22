@@ -487,6 +487,7 @@ li.font-content {
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
+  max-width: 15px;
   position: absolute;
   @include respond-to(md) {
     top: 100px;
@@ -497,17 +498,18 @@ li.font-content {
 .carousel-control-next-icon {
   position: absolute;
   top: 40vh;
+  max-width: 15px;
 }
 .carousel-control-prev-icon {
   background-image: url("../assets/images/arrow-left-blue.svg");
-  left: -3px;
+  left: 0;
   @include respond-to(md) {
     left: 5px;
   }
 }
 .carousel-control-next-icon {
   background-image: url("../assets/images/arrow-right-blue.svg");
-  right: -3px;
+  right: 0;
   @include respond-to(md) {
     right: 5px;
   }
@@ -536,8 +538,8 @@ li.font-content {
   position: relative;
   background-size: contain;
   // right: 10px;
-  left: -7px;
-    top: 7px;
+  left: -4px;
+    top: 4px;
   cursor: pointer;
   z-index:999;
   @include respond-to(md) {
@@ -564,6 +566,10 @@ li.font-content {
 
 .img-slider {
   object-fit: cover;
+  max-width: 100%;
+  max-height: calc(100vh - 20px);
+  height: 100vh;
+  object-position: 50% 50%;
 }
 .inner-content {
   padding-bottom: 10px;
@@ -576,7 +582,7 @@ li.font-content {
 }
 
 .inactive-section {
-  @include respond-to(sm) {
+  @include respond-to(md) {
     position: fixed;
     top: 101%;
     z-index: 1000;
@@ -606,7 +612,7 @@ li.font-content {
   height: 36px;
   position: absolute;
   bottom: 25px;
-  left: 50px;
+  left: 25px;
   display: block;
   z-index: 2000;
 }
