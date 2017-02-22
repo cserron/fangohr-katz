@@ -18,6 +18,19 @@ function scroll() {
     });
 }
 
+function viewDetails() {
+    $('.item-detail').click(function() {
+        var target = $(this).data('target');
+        var detailItem = $(this).data('detail-item');
+        $('#'+target).addClass('detail-active'); //TODO #target-detailItem with a specific page
+    });
+}
+function closeDetails() {
+    $('.close-wrapper-detail').click(function() {
+        $(this).parent('section').removeClass('detail-active');
+    });
+}
+
 function openSection() {
     $('.open-section').click(function() {
         var target = $(this).data('target');
@@ -166,4 +179,6 @@ function init() {
     closeSection();
     toggleInfoDiv();
     detectResize();
+    viewDetails();
+    closeDetails();
 }

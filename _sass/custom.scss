@@ -652,10 +652,45 @@ li.font-content {
     z-index: 1000;
   }
 }
+.detail {
+  position: fixed;
+  opacity: 0;
+  z-index: -100;
+  transition: all 0.5s;
+  &.detail-active {
+    opacity: 1;
+    z-index: 2000;
+  }
+}
 .close-wrapper-info {
   @extend .close-wrapper;
   position: absolute;
   top: 10px;
   right: 10px;
   left: auto;
+}
+.close-wrapper-detail {
+  @extend .close-wrapper-info;
+}
+
+.font-title-detail {
+  @extend .font-title;
+  margin-bottom: 86px;
+  @media (min-width: 567px) and (max-width: 576px) {
+    margin-bottom: 40px;
+  }
+  @include respond-to(sm) {
+    margin-bottom: 30px;
+  } 
+}
+
+.col-xs-landscape {
+  @media (min-width: 567px) and (max-width: 576px) {
+    max-width: 25%;
+  }
+}
+
+.font-subtitle-detail {
+  @extend .font-subtitle;
+  margin-bottom: 30px;
 }
