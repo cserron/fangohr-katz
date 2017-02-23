@@ -573,7 +573,7 @@ li.font-content {
 
 .img-slider {
   object-fit: cover;
-  max-width: 100%;
+  min-width: 100%;
   max-height: calc(100vh - 20px);
   height: 100vh;
   object-position: 50% 50%;
