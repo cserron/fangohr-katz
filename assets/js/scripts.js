@@ -1,5 +1,168 @@
 $(document).ready(init);
 
+var dic = 
+    {
+        "peace-of-mind-team": [
+            {
+                "title": "Team",
+                "subtitle": "David Katz",
+                "img": '01',
+                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
+                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "Team",
+                "subtitle": "David Katz",
+                "img": '02',
+                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
+                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "Team",
+                "subtitle": "David Katz",
+                "img": '03',
+                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
+                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "Team",
+                "subtitle": "David Katz",
+                "img": '04',
+                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
+                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "Team",
+                "subtitle": "David Katz",
+                "img": '05',
+                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
+                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "Team",
+                "subtitle": "David Katz",
+                "img": '06',
+                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
+                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "Team",
+                "subtitle": "David Katz",
+                "img": '07',
+                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
+                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "Team",
+                "subtitle": "David Katz",
+                "img": '08',
+                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
+                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "Team",
+                "subtitle": "David Katz",
+                "img": '09',
+                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
+                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "Team",
+                "subtitle": "David Katz",
+                "img": '09',
+                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
+                            magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            }
+            
+        ],
+        "management-properties": [
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
+                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
+                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
+                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
+                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
+                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
+                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "New York Properties",
+                "subtitle": "Work",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+        ]
+    };
+
 function windowWidth() {
     return $(window).width();
 }
@@ -18,11 +181,32 @@ function scroll() {
     });
 }
 
+function extractImageRoot(img) {
+    var imgNameFile = img.match(/([0-9]+)\.([0-9a-z]+)/) || "";
+    if (imgNameFile !== null)
+        img = img.replace(imgNameFile[0], "");
+    img = img.replace('management-properties/','');
+    img = img.replace('peace-of-mind-team/','');
+    return img;
+}
+
 function viewDetails() {
     $('.item-detail').click(function() {
         var target = $(this).data('target');
+        var idSection = $(this).closest('section').attr('id');
+        console.log("idSection", idSection);
         var detailItem = $(this).data('detail-item');
-        $('#'+target).addClass('detail-active'); //TODO #target-detailItem with a specific page
+        var sectionTarget = $('#'+target);
+        $('#'+target).addClass('detail-active');
+        $('#'+target+' .font-title-detail').html(dic[idSection][detailItem]['title']);
+        $('#'+target+' .font-subtitle-detail').html(dic[idSection][detailItem]['subtitle']);
+        var imgSrc = $('#'+target+' .team-member-image').attr('src');
+        imgSrc = extractImageRoot(imgSrc);
+        imgSrc = imgSrc + '/' + idSection+'/'+dic[idSection][detailItem]['img'] + '.png';
+        $('#'+target+' .team-member-image').attr('src', imgSrc);
+        $('#'+target+' .team-member-image').attr('alt', dic[idSection][detailItem]['subtitle']);
+        $('#'+target+' .font-content').html(dic[idSection][detailItem]['bio']);
+
     });
 }
 function closeDetails() {
@@ -166,6 +350,10 @@ function detectResize() {
     });
 }
 
+function loadDetailsContent(key, itemNumber) {
+    return dic[key][itemNumber];
+}
+
 function init() {
     scroll();
     carousel();
@@ -182,3 +370,4 @@ function init() {
     viewDetails();
     closeDetails();
 }
+
