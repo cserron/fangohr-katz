@@ -69,7 +69,7 @@ var dic =
             {
                 "title": "Team",
                 "subtitle": "David Katz",
-                "img": '09',
+                "img": '10',
                 "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
                             magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             }
@@ -350,10 +350,6 @@ function detectResize() {
     });
 }
 
-function loadDetailsContent(key, itemNumber) {
-    return dic[key][itemNumber];
-}
-
 function init() {
     scroll();
     carousel();
@@ -370,4 +366,3 @@ function init() {
     viewDetails();
     closeDetails();
 }
-
