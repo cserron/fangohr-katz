@@ -61,14 +61,22 @@ body {
   font-style: normal;
   font-stretch: normal;
   line-height: 1.17;
+  // @include respond-to(sm) {
+  //   font-size: 48px;
+  // }
   @include respond-to(md) {
-    font-size: 56px;
+    font-size: 48px;
     line-height: 1.23;
     letter-spacing: -1.2px;
   }
+  @include respond-to(lg) {
+    font-size: 56px;
+  }
   color: _palette(_katz-primary);
 }
-
+.font-title-item:hover {
+  opacity: .8;
+}
 
 .font-subtitle {
   font-family: Miller-Text;
@@ -306,6 +314,15 @@ li.font-content {
   }
 }
 
+.p-content-about {
+  @extend .p-content;
+  margin-bottom: 8px;
+  line-height: 1.25;
+  @include respond-to(md) {
+    padding-bottom: 0px;
+  }
+}
+
 .team-content {
   padding-top: 0;
   padding-bottom: 60px;
@@ -373,14 +390,16 @@ li.font-content {
     @extend .font-content;
     float: left;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
     @include respond-to(md) {
-      margin-top: 40px;
+      margin-top: 20px;
+      margin-bottom: 16px;
     }
   }
   .contact-ul {
     float: left;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   .btn-contact {
     border: 1px solid _palette(_katz-secondary);
@@ -456,7 +475,7 @@ li.font-content {
   position: absolute;
   bottom: 20px;
   left: 0;
-  width: 95%;
+  width: 100%;
   margin-left: 0 !important;
   @include respond-to(md) {
     bottom: 40px;
@@ -464,7 +483,7 @@ li.font-content {
 }
 .navigation-down-cover {
   @extend .navigation-down;
-  width: 95%;
+  width: 100%;
 }
 
 
@@ -573,14 +592,14 @@ li.font-content {
 
 .img-slider {
   object-fit: cover;
-  max-width: 100%;
+  min-width: 100%;
   max-height: calc(100vh - 20px);
   height: 100vh;
   object-position: 50% 50%;
 }
-.inner-content {
-  padding-bottom: 10px;
-}
+// .inner-content {
+//   padding-bottom: 10px;
+// }
 .border-blue {
   border: 10px solid _palette(_katz-primary);
 }
@@ -608,8 +627,12 @@ li.font-content {
 .contact-close {
     @extend .close-white;
     left: auto;
-    right: 30px;
-    top: 30px;
+    right: 0px;
+    top: 20px;
+    @include respond-to(md) {
+      right: 30px;
+      top: 30px;
+    }
 }
 
 .info-button {
