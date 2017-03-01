@@ -168,11 +168,22 @@ function windowWidth() {
 }
 
 function scroll() {
-    $(".cover-anchor").click(function () {
+    $(".main-anchor").click(function () {
         var section = $(this).parents('section');
         if (windowWidth() > 767) {
             var nextSection = section.next();
             $(nextSection).addClass('activate-section');
+        } else {
+            $('html, body').animate({
+                scrollTop: section.next().offset().top
+            }, 1000);
+        }
+    });
+    $(".cover-anchor").click(function () {
+        var section = $(this).closest('section');
+        if (windowWidth() > 767) {
+            var parentSection = section.parent('section');
+            parentSection.addClass('translate-section');
         } else {
             $('html, body').animate({
                 scrollTop: section.next().offset().top
@@ -229,10 +240,21 @@ function openSection() {
 }
 
 function closeSection() {
-    $('.close-wrapper, .contact-close').click(function() {
-        var section = $(this).parents('section').attr('id');
+    $('.close-wrapper').click(function() {
         if (windowWidth() > 767) {
-            $('section').removeClass('activate-section');
+            var sections = $(this).parents('section');
+            var parentSection = sections.parent('section');
+            parentSection.removeClass('activate-section translate-section');
+        } else {
+            $('html, body').animate({
+                scrollTop: $('#menu').offset().top
+            }, 1000);
+        }
+    });
+    $('.contact-close').click(function() {
+        if (windowWidth() > 767) {
+            var section = $(this).parents('section');
+            section.removeClass('activate-section');
         } else {
             $('html, body').animate({
                 scrollTop: $('#menu').offset().top
