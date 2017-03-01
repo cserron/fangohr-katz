@@ -1,30 +1,32 @@
 <section class="section inactive-section" id="peace-of-mind">
-    <div class="carousel-item active bkg-cover peace-of-mind-cover  border-white">
-        <div class="katz-container ">
-            <h2 class="font-title primary">Peace of Mind</h2>
-            {% include utils/down-arrow.html img-color="white" %}
-        </div>
-    </div>
-</section>
-<section class="section inactive-section" id="peace-of-mind2">
-    <div id="carousel5" class="carousel slide" data-ride="carousel" data-interval="false">
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active border-white">
-                <!--<div class="close close-blue  hidden-sm-up" data-target="menu"></div>-->
-                {% include peace-of-mind/item1.html %} 
-                {% include utils/down-cross.html img-color="white" %}
-            </div>
-            <div class="carousel-item  border-white">
-                <!--<div class="close close-blue  hidden-sm-up" data-target="menu"></div>-->
-                {% include peace-of-mind/item2.html %} 
-                {% include utils/down-cross.html img-color="white" %}
-            </div>
-            <div class="carousel-item  border-white">
-                <!--<div class="close close-blue  hidden-sm-up" data-target="menu"></div>-->
-                {% include peace-of-mind/item3.html %} 
-                {% include utils/down-cross.html img-color="white" %}
+    <section class="section">
+        <div class="carousel-item active bkg-cover peace-of-mind-cover  border-white">
+            <div class="katz-container ">
+                <h2 class="font-title primary">Peace of Mind</h2>
+                {% include utils/down-arrow.html img-color="white" %}
             </div>
         </div>
-        {% include carousel/paginator.html carouselId="#carousel5" %}
-    </div>
+    </section>
+    <section class="section" id="peace-of-mind2">
+        <div id="carousel5" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active border-white">
+                    <!--<div class="close close-blue  hidden-sm-up" data-target="menu"></div>-->
+                    {% include peace-of-mind/item1.html %} 
+                    {% include utils/down-cross.html img-color="white" %}
+                </div>
+                <div class="carousel-item  border-white">
+                    <!--<div class="close close-blue  hidden-sm-up" data-target="menu"></div>-->
+                    {% include peace-of-mind/item2.html %} 
+                    {% include utils/down-cross.html img-color="white" %}
+                </div>
+                <div class="carousel-item  border-white">
+                    <!--<div class="close close-blue  hidden-sm-up" data-target="menu"></div>-->
+                    {% include peace-of-mind/item3.html %} 
+                    {% include utils/down-cross.html img-color="white" %}
+                </div>
+            </div>
+            {% include carousel/paginator.html carouselId="#carousel5" %}
+        </div>
+    </section>
 </section>
