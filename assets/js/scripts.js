@@ -314,15 +314,10 @@ function down() {
     });
 }
 function scrollFromCoverToMenu() {
-    var scrolled = false;
-    if (!scrolled) {
-        if (windowWidth() > 767) {
-            $(window).scroll(down);
-            scrolled = true;
-        }
-        $("#cover").on('click keydown', down);
+    if (windowWidth() > 767) {
+        $(window).one('scroll', down);
     }
-    scrolled = true;
+    $("#cover").one('scroll click keydown', down);
 }
 
 function toggleInfoDiv() {
