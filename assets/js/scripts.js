@@ -194,7 +194,6 @@ function viewDetails() {
     $('.item-detail').click(function() {
         var target = $(this).data('target');
         var idSection = $(this).closest('section').attr('id');
-        console.log("idSection", idSection);
         var detailItem = $(this).data('detail-item');
         var sectionTarget = $('#'+target);
         $('#'+target).addClass('detail-active');
@@ -230,7 +229,7 @@ function openSection() {
 }
 
 function closeSection() {
-    $('.close-wrapper').click(function() {
+    $('.close-wrapper, .contact-close').click(function() {
         var section = $(this).parents('section').attr('id');
         if (windowWidth() > 767) {
             $('section').removeClass('activate-section');
