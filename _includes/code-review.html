@@ -1,19 +1,21 @@
-<section class="section inactive-section" id="code-review">
-    <div class="carousel-item active bkg-cover code-review-cover border-white">
-        <div class="katz-container ">
-            <h2 class="font-title">Code Consultation & Review</h2>
-            {% include utils/down-arrow.html img-color="white" %}
-        </div>
-    </div>
-</section>
-<section class="section inactive-section" id="code-review2">
-    <div id="carousel4" class="carousel slide" data-ride="carousel" data-interval="false">
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active border-white">
-                <!--<div class="close close-blue  hidden-sm-up" data-target="menu"></div>-->
-                {% include code-review/item1.html %} {% include utils/down-cross.html img-color="white" %}
+<section id="code-review" class="section inactive-section">
+    <section class="section">
+        <div class="carousel-item active bkg-cover code-review-cover border-white">
+            <div class="katz-container ">
+                <h2 class="font-title">Code Consultation & Review</h2>
+                {% include utils/down-arrow.html img-color="white" %}
             </div>
         </div>
-        <!--{% include carousel/paginator.html carouselId="#carousel4" %}-->
-    </div>
+    </section>
+    <section class="section" id="code-review2">
+        <div id="carousel4" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active border-white">
+                    <!--<div class="close close-blue  hidden-sm-up" data-target="menu"></div>-->
+                    {% include code-review/item1.html %} {% include utils/down-cross.html img-color="white" %}
+                </div>
+            </div>
+            <!--{% include carousel/paginator.html carouselId="#carousel4" %}-->
+        </div>
+    </section>
 </section>

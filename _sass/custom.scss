@@ -356,6 +356,7 @@ li.font-content {
 .team-member-image,
 .property-image {
   padding-bottom: 14px;
+  cursor: pointer;
 }
 .team-member-name {
   @extend .font-subtitle;
@@ -597,12 +598,11 @@ li.font-content {
   height: 100vh;
   object-position: 50% 50%;
 }
-// .inner-content {
-//   padding-bottom: 10px;
-// }
+
 .border-blue {
   border: 10px solid _palette(_katz-primary);
 }
+
 .border-white {
   border: 10px solid _palette(_katz-secondary);
 }
@@ -617,9 +617,9 @@ li.font-content {
       top: 0;
       display: block;
     }
-    &.deactivate-section {
-      top: 101%;
-      display: none;
+    &.translate-section {
+      top: -100%;
+      display: block;
     }
   }
 }
