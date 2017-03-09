@@ -361,9 +361,11 @@ function toggleInfoDiv() {
 }
 
 function detectResize() {
-    $(window).resize(function() {
-        location.reload();
-    });
+   if (windowWidth() > 767) {
+        $(window).resize(function() {
+            location.reload();
+        });
+     } 
 }
 
 function init() {
