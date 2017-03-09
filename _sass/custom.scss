@@ -594,7 +594,6 @@ li.font-content {
 .img-slider {
   object-fit: cover;
   min-width: 100%;
-  max-height: calc(100vh - 20px);
   height: 100vh;
   object-position: 50% 50%;
 }
@@ -619,6 +618,10 @@ li.font-content {
     }
     &.translate-section {
       top: -100%;
+      display: block;
+    }
+    &.translate-section-building {
+      top: -200%;
       display: block;
     }
   }
@@ -652,17 +655,15 @@ li.font-content {
   color: #393939;
   line-height: 1.5;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 20px;
+  left: 10%;
   background-color: white;
-  // z-index: 1000;
-    width: 100%;
-    height: 50vh;
+  width: 90%;
   padding: 28px;
   display: block;
   @include respond-to(md) {
-  width: 50%;
-  height: 30vh;
+    width: 50%;
+    left: 20px;
   }
 }
 
