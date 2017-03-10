@@ -183,7 +183,11 @@ function scroll() {
         var section = $(this).closest('section');
         if (windowWidth() > 767) {
             var parentSection = section.parent('section');
-            parentSection.addClass('translate-section');
+            if (section.attr('id') == 'building2') {
+                parentSection.addClass('translate-section-building');
+            } else {
+                parentSection.addClass('translate-section');
+            }
         } else {
             $('html, body').animate({
                 scrollTop: section.next().offset().top
@@ -201,27 +205,54 @@ function extractImageRoot(img) {
     return img;
 }
 
+function showDetail(target, idSection, detailItem) {
+    $('#'+target).addClass('detail-active');
+    $('#'+target+' .font-title-detail').html(dic[idSection][detailItem]['title']);
+    $('#'+target+' .font-subtitle-detail').html(dic[idSection][detailItem]['subtitle']);
+    var imgSrc = $('#'+target+' .team-member-image').attr('src');
+    imgSrc = extractImageRoot(imgSrc);
+    imgSrc = imgSrc + '/' + idSection+'/'+dic[idSection][detailItem]['img'] + '.png';
+    $('#'+target+' .team-member-image').attr('src', imgSrc);
+    $('#'+target+' .team-member-image').attr('alt', dic[idSection][detailItem]['subtitle']);
+    $('#'+target+' .font-content').html(dic[idSection][detailItem]['bio']);
+    $('#index-item').data('detail-item', detailItem.toString());
+    $('#index-item').data('id-section', idSection);
+}
+
 function viewDetails() {
+    $('.item-detail').hover(function() {
+        $(this).toggleClass('deactivate');
+        var tooltip = $(this).next();
+        tooltip.toggleClass('detail-tooltip-active');
+    });
     $('.item-detail').click(function() {
         var target = $(this).data('target');
         var idSection = $(this).closest('section').attr('id');
         var detailItem = $(this).data('detail-item');
         var sectionTarget = $('#'+target);
-        $('#'+target).addClass('detail-active');
-        $('#'+target+' .font-title-detail').html(dic[idSection][detailItem]['title']);
-        $('#'+target+' .font-subtitle-detail').html(dic[idSection][detailItem]['subtitle']);
-        var imgSrc = $('#'+target+' .team-member-image').attr('src');
-        imgSrc = extractImageRoot(imgSrc);
-        imgSrc = imgSrc + '/' + idSection+'/'+dic[idSection][detailItem]['img'] + '.png';
-        $('#'+target+' .team-member-image').attr('src', imgSrc);
-        $('#'+target+' .team-member-image').attr('alt', dic[idSection][detailItem]['subtitle']);
-        $('#'+target+' .font-content').html(dic[idSection][detailItem]['bio']);
-
+        showDetail(target, idSection, detailItem);
     });
 }
 function closeDetails() {
     $('.close-wrapper-detail').click(function() {
         $(this).parent('section').removeClass('detail-active');
+    });
+}
+
+function navigationDetails() {
+    $('.right-arrow').click(function() {
+        var idSection = $('#index-item').data('id-section');
+        var detailItem = $('#index-item').data('detail-item');
+        detailItem = parseInt(detailItem);
+        detailItem = (detailItem + 1 > dic[idSection].length - 1) ? 0 : detailItem + 1;
+        showDetail('detail', idSection, detailItem);
+    });
+    $('.left-arrow').click(function() {
+        var idSection = $('#index-item').data('id-section');
+        var detailItem = $('#index-item').data('detail-item');
+        detailItem = parseInt(detailItem);
+        detailItem = (detailItem - 1 < 0) ? dic[idSection].length - 1 : detailItem - 1;   
+        showDetail('detail', idSection, detailItem);
     });
 }
 
@@ -244,7 +275,7 @@ function closeSection() {
         if (windowWidth() > 767) {
             var sections = $(this).parents('section');
             var parentSection = sections.parent('section');
-            parentSection.removeClass('activate-section translate-section');
+            parentSection.removeClass('activate-section translate-section translate-section-building');
         } else {
             $('html, body').animate({
                 scrollTop: $('#menu').offset().top
@@ -345,8 +376,6 @@ function scrollFromCoverToMenu() {
 function toggleInfoDiv() {
     $('.info-button').click(function() {
         var parent = $(this).parent('.carousel-item');
-        // console.log("info-button",infoDiv.attr('class'));
-        
         var infoDiv = parent.find('.info-div');
         infoDiv.addClass('info-active');
         $('.close-wrapper-info').show();
@@ -383,4 +412,5 @@ function init() {
     detectResize();
     viewDetails();
     closeDetails();
+    navigationDetails();
 }
