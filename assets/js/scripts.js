@@ -215,11 +215,15 @@ function showDetail(target, idSection, detailItem) {
     $('#'+target+' .team-member-image').attr('src', imgSrc);
     $('#'+target+' .team-member-image').attr('alt', dic[idSection][detailItem]['subtitle']);
     $('#'+target+' .font-content').html(dic[idSection][detailItem]['bio']);
+    $('#index-item').data('detail-item', detailItem.toString());
+    $('#index-item').data('id-section', idSection);
 }
 
 function viewDetails() {
     $('.item-detail').hover(function() {
         $(this).toggleClass('deactivate');
+        var tooltip = $(this).next();
+        tooltip.toggleClass('detail-tooltip-active');
     });
     $('.item-detail').click(function() {
         var target = $(this).data('target');
@@ -236,9 +240,19 @@ function closeDetails() {
 }
 
 function navigationDetails() {
-    //TODO: add logic for navigation
     $('.right-arrow').click(function() {
-        //
+        var idSection = $('#index-item').data('id-section');
+        var detailItem = $('#index-item').data('detail-item');
+        detailItem = parseInt(detailItem);
+        detailItem = (detailItem + 1 > dic[idSection].length - 1) ? 0 : detailItem + 1;
+        showDetail('detail', idSection, detailItem);
+    });
+    $('.left-arrow').click(function() {
+        var idSection = $('#index-item').data('id-section');
+        var detailItem = $('#index-item').data('detail-item');
+        detailItem = parseInt(detailItem);
+        detailItem = (detailItem - 1 < 0) ? dic[idSection].length - 1 : detailItem - 1;   
+        showDetail('detail', idSection, detailItem);
     });
 }
 
@@ -362,8 +376,6 @@ function scrollFromCoverToMenu() {
 function toggleInfoDiv() {
     $('.info-button').click(function() {
         var parent = $(this).parent('.carousel-item');
-        // console.log("info-button",infoDiv.attr('class'));
-        
         var infoDiv = parent.find('.info-div');
         infoDiv.addClass('info-active');
         $('.close-wrapper-info').show();
