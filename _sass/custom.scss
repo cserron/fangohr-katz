@@ -11,12 +11,12 @@ body {
 }
 .katz-container {
   @extend .container-fluid;
-  padding: 0 15px;
+  padding: 30px 15px;
   float: left;
   width: 100%;
   position: relative;
   @include respond-to(md) {
-    padding: 0 28px;
+    padding: 20px 28px;
   }
 }
 
@@ -97,7 +97,7 @@ body {
 	color: _palette(_katz-primary);
 }
 li.font-content:before {
-  content: '- ';
+  content: '— ';
 }
 
 li.font-content {
@@ -281,10 +281,9 @@ li.font-content {
 .font-title {
   letter-spacing: -1.2px;
   margin-bottom: 40px;
-  padding-top: 15px;
+  padding:0;
   @include respond-to(md) {
     letter-spacing: auto;
-    padding-top: 20px;
     margin-bottom: auto;
   }
 }
