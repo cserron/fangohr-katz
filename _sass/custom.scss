@@ -318,6 +318,9 @@ li.font-content {
   }
 }
 
+/* ======================================= */
+/* TEAM ================================== */
+/* ======================================= */
 .team-content {
   padding-top: 0;
   padding-bottom: 60px;
@@ -329,23 +332,28 @@ li.font-content {
     margin-top: 20vh;
     padding-bottom: 0;
   }
-}
-.team-content .col-3 {
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-  padding-bottom: 14px;
-  @media (min-width: 567px) and (max-width: 576px) {
-    max-width: 16.666667%;
 
+  .col-3 {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    padding-bottom: 14px;
+    @media (min-width: 567px) and (max-width: 576px) {
+      max-width: 16.666667%;
+    }
   }
-}
-.team-content .col-md-2 {
-  @include respond-to(md) {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
+
+  .col-md-2 {
+    @include respond-to(md) {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 10px;
+    }
   }
+
+  
 }
+
+
 .team-member-item {
   padding-bottom:25px;
 }
@@ -354,15 +362,7 @@ li.font-content {
   // padding-bottom: 14px;
   cursor: pointer;
 }
-.team-member-name {
-  @extend .font-subtitle;
-  padding-bottom: 3px;
-}
-.team-member-role {
-  @extend .font-content;
-  line-height: 1.31;
-  padding-bottom: 27px;
-}
+
 
 .contact {
   position:relative;
