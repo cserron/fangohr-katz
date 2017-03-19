@@ -179,7 +179,7 @@ function scroll() {
             }, 1000);
         }
     });
-    $(".cover-anchor").click(function () {
+    $(".cover-anchor, .bkg-cover").click(function () {
         var section = $(this).closest('section');
         if (windowWidth() > 767) {
             var parentSection = section.parent('section');
