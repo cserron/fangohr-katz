@@ -225,41 +225,33 @@ li.font-content {
   width: 100%;
   
   &.renovation-cover {
-    background-image: url('../assets/images/carousel/renovation-mobile-cover.jpg');
+    background-image: url('../assets/images/carousel/renovation-cover-xs.jpg');
     @include respond-to(sm) {
-      background-image: url('../assets/images/carousel/renovation-mobile-cover@3x.jpg');
-    }
-    @include respond-to(md) {
-      background-image: url('../assets/images/carousel/renovation-cover@2x.jpg');
+      background-image: url('../assets/images/carousel/renovation-cover.jpg');
     }
   }
+
   &.building-cover {
-    background-image: url('../assets/images/carousel/building-mobile-cover.jpg');
+    background-image: url('../assets/images/carousel/building-cover-xs.jpg');
     @include respond-to(sm) {
-      background-image: url('../assets/images/carousel/building-mobile-cover@3x.jpg');
-    }
-    @include respond-to(md) {
-      background-image: url('../assets/images/carousel/building-cover@2x.jpg');
+      background-image: url('../assets/images/carousel/building-cover.jpg');
     }
   }
   &.management-cover {
-    background-image: url('../assets/images/carousel/support-mobile-cover.jpg');
+    background-image: url('../assets/images/carousel/support-cover-xs.jpg');
     @include respond-to(sm) {
-      background-image: url('../assets/images/carousel/support-mobile-cover@3x.jpg');
+      background-image: url('../assets/images/carousel/support-cover.jpg');
     }
-    @include respond-to(md) {
-      background-image: url('../assets/images/carousel/support-cover@2x.jpg');
-    }
+    
   }
+
   &.code-review-cover {
-    background-image: url('../assets/images/carousel/code-review-mobile-cover.jpg');
+    background-image: url('../assets/images/carousel/code-review-cover-xs.jpg');
     @include respond-to(sm) {
-      background-image: url('../assets/images/carousel/code-review-mobile-cover@3x.jpg');
-    }
-    @include respond-to(md) {
-      background-image: url('../assets/images/carousel/code-review-cover@2x.jpg');
+      background-image: url('../assets/images/carousel/code-review-cover.jpg');
     }
   }
+
   &.peace-of-mind-cover {
     background-image: url('../assets/images/carousel/peaceofmind-mobile-cover.jpg');
     @include respond-to(sm) {
@@ -470,7 +462,7 @@ li.font-content {
 
 .navigation-down {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   left: 0;
   width: 100%;
   margin-left: 0 !important;
