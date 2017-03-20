@@ -183,7 +183,7 @@ function scroll() {
         var section = $(this).closest('section');
         if (windowWidth() > 767) {
             var parentSection = section.parent('section');
-            if (section.attr('id') == 'building2') {
+            if (section.attr('id') == 'building2' || section.attr('id') == 'management2') {
                 parentSection.addClass('translate-section-building');
             } else if (section.attr('id') == 'peace-of-mind2') {
                 parentSection.addClass('translate-section-peace-of-mind');
