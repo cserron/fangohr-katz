@@ -599,7 +599,7 @@ li.font-content {
     position: fixed;
     top: 101%;
     z-index: 1000;
-    transition: all 1s;
+    transition: all 0.8s;
     &.activate-section {
       top: 0;
       display: block;
