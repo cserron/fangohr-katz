@@ -185,12 +185,39 @@ function scroll() {
             var parentSection = section.parent('section');
             if (section.attr('id') == 'building2') {
                 parentSection.addClass('translate-section-building');
+            } else if (section.attr('id') == 'peace-of-mind2') {
+                parentSection.addClass('translate-section-peace-of-mind');
+            } else if (section.attr('id') == 'peace-of-mind3') {
+                parentSection.addClass('translate-section-peace-of-mind2');
+            } else if (section.attr('id') == 'peace-of-mind4') {
+                $('#contact').addClass('activate-section');
             } else {
                 parentSection.addClass('translate-section');
             }
         } else {
+            var target = (section.attr('id') == 'peace-of-mind4') ? $('#contact') : section.next();
             $('html, body').animate({
-                scrollTop: section.next().offset().top
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+    $(".about").click(function() {
+        if (windowWidth() > 767) {
+            $("#peace-of-mind").addClass('translate-section-peace-of-mind');
+        } else {
+            var target = $(this).data('target');
+            $('html, body').animate({
+                scrollTop: $('#peace-of-mind3').offset().top
+            }, 1000);
+        }
+    });
+    $(".team").click(function() {
+        if (windowWidth() > 767) {
+            $("#peace-of-mind").addClass('translate-section-peace-of-mind2');
+        } else {
+            var target = $(this).data('target');
+            $('html, body').animate({
+                scrollTop: $('#peace-of-mind4').offset().top
             }, 1000);
         }
     });
@@ -275,7 +302,14 @@ function closeSection() {
         if (windowWidth() > 767) {
             var sections = $(this).parents('section');
             var parentSection = sections.parent('section');
-            parentSection.removeClass('activate-section translate-section translate-section-building');
+            parentSection.removeClass('\
+            activate-section \
+            translate-section \
+            translate-section-building \
+            translate-section-peace-of-mind \
+            translate-section-peace-of-mind2 \
+            translate-section-peace-of-mind3 \
+            ');
         } else {
             $('html, body').animate({
                 scrollTop: $('#menu').offset().top
@@ -286,6 +320,18 @@ function closeSection() {
         if (windowWidth() > 767) {
             var section = $(this).parents('section');
             section.removeClass('activate-section');
+            var sections = $('section');
+            //workaround: when contact comes from peace-of-mind
+            sections.each(function(index) {
+                var section = $(this);
+                section.removeClass(' \
+                activate-section \
+                translate-section \
+                translate-section-peace-of-mind \
+                translate-section-peace-of-mind2 \
+                translate-section-peace-of-mind3');
+            });
+            
         } else {
             $('html, body').animate({
                 scrollTop: $('#menu').offset().top
