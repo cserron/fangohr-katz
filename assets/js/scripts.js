@@ -299,7 +299,6 @@ function navigationDetails() {
         var detailItem = $('#index-item').data('detail-item');
         detailItem = parseInt(detailItem);
         detailItem = (detailItem + 1 > dic[idSection].length - 1) ? 0 : detailItem + 1;
-        console.log(idSection, detailItem);
         showDetail('detail', idSection, detailItem);
     });
     $('.left-arrow').click(function() {
