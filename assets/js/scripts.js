@@ -4,71 +4,75 @@ var dic =
     {
         "peace-of-mind-team": [
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "David Katz",
+                "subtitle": "Director",
                 "img": '01',
                 "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
                         magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "Vanessa Sanchez",
+                "subtitle": "Design",
                 "img": '02',
-                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
-                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "Vanessa received a Bachelor of Arts in Architecture from the University of California, \
+                Berkeley in 2004 and is certified in Social Economic Environmental Design (SEED) from the Public Interest Design Institute. \
+                Her New York experience includes residential, hospitality and educational projects with Halpern Architects and Robert A.M. \
+                Stern. As a project designer at KA, Vanessa has been instrumental in the completion of multiple residential and commercial \
+                gut renovation projects. In addition to her architectural work, Vanessa has volunteered her time for multiple causes \
+                including Big Brothers Big Sisters of New York, New York Cares and Open Architecture New York."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "David Katz",
+                "subtitle": "Director",
                 "img": '03',
                 "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
                         magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "David Katz",
+                "subtitle": "Director",
                 "img": '04',
                 "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
                         magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "David Katz",
+                "subtitle": "Director",
                 "img": '05',
                 "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
                         magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "David Katz",
+                "subtitle": "Director",
                 "img": '06',
                 "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
                         magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "David Katz",
+                "subtitle": "Director",
                 "img": '07',
                 "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
                         magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "David Katz",
+                "subtitle": "Director",
                 "img": '08',
                 "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
                         magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "David Katz",
+                "subtitle": "Director",
                 "img": '09',
                 "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
                         magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "David Katz",
+                "subtitle": "Director",
                 "img": '10',
                 "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
                             magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
@@ -183,7 +187,7 @@ function scroll() {
         var section = $(this).closest('section');
         if (windowWidth() > 767) {
             var parentSection = section.parent('section');
-            if (section.attr('id') == 'building2') {
+            if (section.attr('id') == 'building2' || section.attr('id') == 'management2') {
                 parentSection.addClass('translate-section-building');
             } else if (section.attr('id') == 'peace-of-mind2') {
                 parentSection.addClass('translate-section-peace-of-mind');
@@ -229,6 +233,7 @@ function extractImageRoot(img) {
         img = img.replace(imgNameFile[0], "");
     img = img.replace('management-properties/','');
     img = img.replace('peace-of-mind-team/','');
+    img = img.replace('caruosel/','');
     return img;
 }
 
@@ -240,8 +245,8 @@ function showDetail(target, idSection, detailItem) {
     imgSrc = extractImageRoot(imgSrc);
     imgSrc = imgSrc + '/' + idSection+'/'+dic[idSection][detailItem]['img'] + '.png';
     $('#'+target+' .team-member-image').attr('src', imgSrc);
-    $('#'+target+' .team-member-image').attr('alt', dic[idSection][detailItem]['subtitle']);
-    $('#'+target+' .font-content').html(dic[idSection][detailItem]['bio']);
+    $('#'+target+' .team-member-image').attr('alt', dic[idSection][detailItem]['title']);
+    $('#'+target+' .font-content').html(dic[idSection][detailItem]['content']);
     $('#index-item').data('detail-item', detailItem.toString());
     $('#index-item').data('id-section', idSection);
 }
@@ -263,6 +268,19 @@ function viewDetails() {
 function closeDetails() {
     $('.close-wrapper-detail').click(function() {
         $(this).parent('section').removeClass('detail-active');
+    });
+}
+
+function carouselHandler() {
+    $('.js-open-carousel').click(function() {
+        console.log('openBuilding');
+        // var section = $(this).closest('section');
+        $('#building').addClass('translate-section-peace-of-mind2');
+    });
+    $('.close-wrapper-slider').click(function() {
+        console.log('entramos');
+        $('#building').removeClass('translate-section-peace-of-mind2');
+        $('#building').addClass('translate-section-peace-of-mind');
     });
 }
 
@@ -459,4 +477,5 @@ function init() {
     viewDetails();
     closeDetails();
     navigationDetails();
+    carouselHandler();
 }
