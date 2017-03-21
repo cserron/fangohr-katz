@@ -521,20 +521,24 @@ li.font-content {
   max-width: 15px;
 }
 .carousel-control-prev-icon {
-  background-image: url("../assets/images/arrow-left-blue.svg");
+  background-image: url("../assets/images/arrow-left-white.svg");
   left: 0;
   @include respond-to(md) {
     left: 5px;
   }
 }
 .carousel-control-next-icon {
-  background-image: url("../assets/images/arrow-right-blue.svg");
+  background-image: url("../assets/images/arrow-right-white.svg");
   right: 0;
   @include respond-to(md) {
     right: 5px;
   }
 }
-
+.close {
+  opacity: 1;
+  width: 28px;
+  height: 28px;
+}
 .close-wrapper {
   left: calc(50% - 18px);
   background-color: rgba(0,0,0,0.15);
@@ -552,14 +556,14 @@ li.font-content {
 
 .close-white,
 .close-blue {
-  width: 14px;
-  height: 14px;
+  width: 22px;
+  height: 22px;
   display: block;
   position: relative;
   background-size: contain;
   // right: 10px;
-  left: -4px;
-    top: 4px;
+  left: -7px;
+    top: 7px;
   cursor: pointer;
   z-index:999;
   @include respond-to(md) {
@@ -663,10 +667,11 @@ li.font-content {
   bottom: 20px;
   left: 10%;
   background-color: white;
-  width: 90%;
+  width: 80%;
   padding: 28px;
   display: block;
   @include respond-to(md) {
+    bottom: 20px;
     width: 50%;
     left: 20px;
   }
@@ -700,6 +705,30 @@ li.font-content {
 }
 .close-wrapper-detail {
   @extend .close-wrapper;
+  background-color: rgba(0,0,0,0);
+  width: 36px;
+  height: 36px;
+  left: calc(50% - 18px);
+  bottom: 10px;
+  @include respond-to(sm) {
+    bottom: 15px;
+  }
+}
+.close-wrapper-slider {
+  @extend .close-wrapper;
+  position: absolute;
+  left: auto;
+  right: 10px;
+  top: 10px;
+  @include respond-to(sm) {
+    left: calc(50% - 18px);
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: auto;
+    right: auto;
+    bottom: -20px;
+  }
 }
 
 .font-title-detail {
@@ -757,7 +786,7 @@ li.font-content {
   height: 31px;
   bottom: 10px;
   @include respond-to(sm) {
-    bottom: 20vh;
+    bottom: 20px;
   }
 }
 .left-arrow {
@@ -766,12 +795,12 @@ li.font-content {
   left: 10px;
   @include respond-to(sm) {
     right: 50px;
-    left: auto;
+    left: 20px;
   }
 }
 .right-arrow {
   background-image: url("../assets/images/arrow-right-blue.svg");
-  right: 10px;
+  right: 20px;
 }
 
 .detail-image {
@@ -779,6 +808,6 @@ li.font-content {
   width: 100%;
 }
 
-.close-wrapper-slider {
+.close-wrapper-section {
   @extend .close-wrapper;
 }
