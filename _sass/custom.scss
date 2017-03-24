@@ -754,7 +754,7 @@ li.font-content {
   @extend .font-subtitle;
   margin-bottom: 30px;
   @include respond-to(sm) {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
   }
 }
 
