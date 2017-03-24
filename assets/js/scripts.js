@@ -4,74 +4,118 @@ var dic =
     {
         "peace-of-mind-team": [
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "David Katz",
+                "subtitle": "AIA, Founder",
                 "img": '01',
-                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
-                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "As founder of Katz Architecture, David has more than 30 years of experience in the fields \
+                of architecture and design. Over this time, he has contributed to a wide range of residential, commercial, \
+                retail, institutional, urban design and preservation projects throughout the United States and abroad. \
+                David received a Bachelor of Architecture from Cooper Union and a Masters of Architecture in Italy through \
+                the University of Washington Italian Studies Program where he received the school’s Outstanding Thesis Award. \
+                His work has appeared in multiple publications including House Beautiful, Building Design + Construction, \
+                New York Spaces, the New York Post and the New York Times. In addition to his professional practice, David \
+                has been a guest critic at the University of Washington, New Jersey institute of Technology and Pratt institute. \
+                While an instructor with the Institute of Design and Construction, David developed and taught classes in \
+                Materials and Methods of Construction. As an invited columnist for BrickUnderground, David has written numerous \
+                articles addressing the complexities of residential renovation in New York City. Licensed in New York, New Jersey, \
+                and Connecticut, David has been a member of the American Institute of Architects since 1994."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "Vanessa Sanchez",
+                "subtitle": "Project Designer",
                 "img": '02',
-                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
-                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "Vanessa received a Bachelor of Arts in Architecture from the University of California, Berkeley \
+                in 2004 and is certified in Social Economic Environmental Design (SEED) from the Public Interest Design \
+                Institute. Her New York experience includes residential, hospitality and educational projects with Halpern \
+                Architects and Robert A.M. Stern. As a project designer at KA, Vanessa has been instrumental in the completion \
+                of multiple residential and commercial gut renovation projects. In addition to her architectural work, Vanessa \
+                has volunteered her time for multiple causes including Big Brothers Big Sisters of New York, New York Cares \
+                and Open Architecture New York."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "Eric Owes",
+                "subtitle": "Project Manager",
                 "img": '03',
-                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
-                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "With over 30 years of experience in the architectural profession, Eric is one of our senior Project \
+                Managers at Katz Architecture. In addition to his varied experience on commercial interiors, educational buildings \
+                and NYC Transit Authority projects, Eric has provided design and project management services for numerous retail \
+                clients including Gucci, Jimmy Choo, Nine West, Foot Locker, Lous Vuitton, David Yurman and Kate Spade. At KA Eric \
+                brings a wealth of design, technical expertise and great humor to every project."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "Paula Rand",
+                "subtitle": "Project Designer",
                 "img": '04',
-                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
-                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "Before joining KA as a project designer, Paula received a Bachelor of Architecture from Rensselaer \
+                Polytechnic Institute in 2012 where her thesis focused on urban design and environmental dynamics. Since joining \
+                KA, her design research background and graphic design skills have served multiple clients including Urban Zen, \
+                MacAndrews & Forbes, El Museo del Barrio and multiple residential clients."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "Luis Casiano",
+                "subtitle": "Technical Director",
                 "img": '05',
-                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
-                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "Luis received a Bachelor of Architecture with Honors from Pratt Institute in 2000. Over the course \
+                of his career he has been instrumental in the design and construction of educational, institutional, civic, \
+                commercial and residential building types. Prior to joining KA, Luis was the Technical Director at AENA, whose \
+                services he expanded to receive ICC accreditation as a Class I Special Inspection Agency for the gut renovation, \
+                expansion, rehabilitation and development of residential building projects in NYC. Luis has extensive experience \
+                and a clear understanding of the subtleties of the NYC Building Code, Zoning Resolution and Local Laws. His \
+                involvement at all phases of work, from the planning and approvals phase, to construction and sign-off, make Luis \
+                an invaluable asset to all clients. As Technical Director, Luis brings a generous spirit, great attitude and \
+                thorough construction knowledge to every project."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "Ivan Silva",
+                "subtitle": "Project Designer",
                 "img": '06',
-                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
-                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "Ivan obtained an Associate Degree in Applied Science in Architectural Technology in 2004 and a \
+                Bachelor of Architecture from NYIT in 2009. Prior to joining KA, Ivan worked in the construction industry \
+                providing services for large scale projects for the NYC School Construction Authority. His experience, strong \
+                work ethic and friendly demeanor are all very helpful in serving KA projects under construction."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "Marvin Rodriguez",
+                "subtitle": "Director of Operations",
                 "img": '07',
-                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
-                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "Marvin graduated with a BFA in Environmental Design from Parsons in 1997 and a Master of \
+                Architecture from the University of Pennsylvania in 2001. He is the recipient of the Alpha Rho Chi Medal \
+                for Architectural Leadership and an AIA Scholarship. Over the course of his experience, he has designed \
+                and managed new construction and renovation projects for a wide range of clients including the GSA, \
+                DEP, DASNY, NYCSCA as well as multiple high-end residential clients. In addition to his role as \
+                Director of Operations, Marvin provides oversight as a Senior Project Manager. Outside the office, \
+                Marvin is a governing board member of Intersections International of the Collegiate Churches of New York."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "Marina Morrone",
+                "subtitle": "Office Manager",
                 "img": '08',
-                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
-                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "Marina received a Bachelor of Arts in Communication from Loyola University in 2007, prior to which \
+                she studied at The American University of Paris. Her professional experience includes office administration for \
+                the financial services industry as well as not-for-profit organizations. At KA, Marina manages the office and serves \
+                as staff bookkeeper. And just in case KA opens outposts in Paris and Rome, Marina is fluent in French and Italian."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "Katharine Gunn",
+                "subtitle": "Project Designer / Building Management / Support Coordinator",
                 "img": '09',
-                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
-                        magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "Katharine received a Bachelor of Science in Architecture and Master of Architecture dual degree \
+                from Roger Williams University in 2009. Her professional experience includes large scale projects for SUNY and \
+                DASNY as well as multiple high-end retail projects for Tourneau, Salvatore Ferragamo, Georgio Armani, Diane \
+                Von Furstenberg and Chanel. Katharine has brought her focused attention to detail to numerous projects at KA \
+                including the NYC flagship store for Carhartt WIP and dozens of Building Management Support projects. Katharine \
+                is also the office cartoonist, responsible for the ever-important weekly happy hour announcements."
             },
             {
-                "title": "Team",
-                "subtitle": "David Katz",
+                "title": "Christina Corrie",
+                "subtitle": "Project Manager",
                 "img": '10',
-                "content": "Bio Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore\
-                            magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "Christina received a Bachelor of Architecture in 2008 from Virginia Polytechnic Institute where \
+                she was a member of the National Society of Collegiate Scholars and AIAS. Prior to joining KA as a project \
+                manager, Christina designed and managed multiple high end retail shops for The Timberland Company, Coach and \
+                CH-Carolina Herrera. At KA Christina’s calm, thoughtful and thorough management style has served several \
+                happy clients, among them the American Council for the Weizmann Institute, MacAndrews & Forbes and Reverence \
+                Capital."
             }
             
         ],
@@ -179,18 +223,45 @@ function scroll() {
             }, 1000);
         }
     });
-    $(".cover-anchor").click(function () {
+    $(".cover-anchor, .bkg-cover").click(function () {
         var section = $(this).closest('section');
         if (windowWidth() > 767) {
             var parentSection = section.parent('section');
-            if (section.attr('id') == 'building2') {
+            if (section.attr('id') == 'building2' || section.attr('id') == 'management2') {
                 parentSection.addClass('translate-section-building');
+            } else if (section.attr('id') == 'peace-of-mind2') {
+                parentSection.addClass('translate-section-peace-of-mind');
+            } else if (section.attr('id') == 'peace-of-mind3') {
+                parentSection.addClass('translate-section-peace-of-mind2');
+            } else if (section.attr('id') == 'peace-of-mind4') {
+                $('#contact').addClass('activate-section');
             } else {
                 parentSection.addClass('translate-section');
             }
         } else {
+            var target = (section.attr('id') == 'peace-of-mind4') ? $('#contact') : section.next();
             $('html, body').animate({
-                scrollTop: section.next().offset().top
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+    $(".about").click(function() {
+        if (windowWidth() > 767) {
+            $("#peace-of-mind").addClass('translate-section-peace-of-mind');
+        } else {
+            var target = $(this).data('target');
+            $('html, body').animate({
+                scrollTop: $('#peace-of-mind3').offset().top
+            }, 1000);
+        }
+    });
+    $(".team").click(function() {
+        if (windowWidth() > 767) {
+            $("#peace-of-mind").addClass('translate-section-peace-of-mind2');
+        } else {
+            var target = $(this).data('target');
+            $('html, body').animate({
+                scrollTop: $('#peace-of-mind4').offset().top
             }, 1000);
         }
     });
@@ -202,6 +273,7 @@ function extractImageRoot(img) {
         img = img.replace(imgNameFile[0], "");
     img = img.replace('management-properties/','');
     img = img.replace('peace-of-mind-team/','');
+    img = img.replace('caruosel/','');
     return img;
 }
 
@@ -213,8 +285,8 @@ function showDetail(target, idSection, detailItem) {
     imgSrc = extractImageRoot(imgSrc);
     imgSrc = imgSrc + '/' + idSection+'/'+dic[idSection][detailItem]['img'] + '.png';
     $('#'+target+' .team-member-image').attr('src', imgSrc);
-    $('#'+target+' .team-member-image').attr('alt', dic[idSection][detailItem]['subtitle']);
-    $('#'+target+' .font-content').html(dic[idSection][detailItem]['bio']);
+    $('#'+target+' .team-member-image').attr('alt', dic[idSection][detailItem]['title']);
+    $('#'+target+' .font-content').html(dic[idSection][detailItem]['content']);
     $('#index-item').data('detail-item', detailItem.toString());
     $('#index-item').data('id-section', idSection);
 }
@@ -236,6 +308,28 @@ function viewDetails() {
 function closeDetails() {
     $('.close-wrapper-detail').click(function() {
         $(this).parent('section').removeClass('detail-active');
+    });
+}
+
+function carouselHandler() {
+    $('.js-open-carousel').click(function() {
+        if (windowWidth() > 767) {
+            $('#building').addClass('translate-section-peace-of-mind2');
+        } else {
+            $('html, body').animate({
+                scrollTop: $('#building4').offset().top
+            }, 1000);
+        }
+    });
+    $('.close-wrapper-slider').click(function() {
+        if (windowWidth() > 767) {
+            $('#building').removeClass('translate-section-peace-of-mind2');
+            $('#building').addClass('translate-section-peace-of-mind');
+        } else {
+            $('html, body').animate({
+                scrollTop: $('#building3').offset().top
+            }, 1000);
+        }
     });
 }
 
@@ -271,11 +365,18 @@ function openSection() {
 }
 
 function closeSection() {
-    $('.close-wrapper').click(function() {
+    $('.close-wrapper-section').click(function() {
         if (windowWidth() > 767) {
             var sections = $(this).parents('section');
             var parentSection = sections.parent('section');
-            parentSection.removeClass('activate-section translate-section translate-section-building');
+            parentSection.removeClass('\
+            activate-section \
+            translate-section \
+            translate-section-building \
+            translate-section-peace-of-mind \
+            translate-section-peace-of-mind2 \
+            translate-section-peace-of-mind3 \
+            ');
         } else {
             $('html, body').animate({
                 scrollTop: $('#menu').offset().top
@@ -286,6 +387,18 @@ function closeSection() {
         if (windowWidth() > 767) {
             var section = $(this).parents('section');
             section.removeClass('activate-section');
+            var sections = $('section');
+            //workaround: when contact comes from peace-of-mind
+            sections.each(function(index) {
+                var section = $(this);
+                section.removeClass(' \
+                activate-section \
+                translate-section \
+                translate-section-peace-of-mind \
+                translate-section-peace-of-mind2 \
+                translate-section-peace-of-mind3');
+            });
+            
         } else {
             $('html, body').animate({
                 scrollTop: $('#menu').offset().top
@@ -413,4 +526,5 @@ function init() {
     viewDetails();
     closeDetails();
     navigationDetails();
+    carouselHandler();
 }
