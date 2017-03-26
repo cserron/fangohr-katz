@@ -4,33 +4,19 @@ var dic =
     {
         "peace-of-mind-team": [
             {
-                "title": "David Katz",
-                "subtitle": "AIA, Founder",
+                "title": "David Katz, AIA",
+                "subtitle": "Founder",
                 "img": '01',
-                "content": "As founder of Katz Architecture, David has more than 30 years of experience in the fields \
-                of architecture and design. Over this time, he has contributed to a wide range of residential, commercial, \
-                retail, institutional, urban design and preservation projects throughout the United States and abroad. \
-                David received a Bachelor of Architecture from Cooper Union and a Masters of Architecture in Italy through \
-                the University of Washington Italian Studies Program where he received the school’s Outstanding Thesis Award. \
-                His work has appeared in multiple publications including House Beautiful, Building Design + Construction, \
-                New York Spaces, the New York Post and the New York Times. In addition to his professional practice, David \
-                has been a guest critic at the University of Washington, New Jersey institute of Technology and Pratt institute. \
-                While an instructor with the Institute of Design and Construction, David developed and taught classes in \
-                Materials and Methods of Construction. As an invited columnist for BrickUnderground, David has written numerous \
-                articles addressing the complexities of residential renovation in New York City. Licensed in New York, New Jersey, \
-                and Connecticut, David has been a member of the American Institute of Architects since 1994."
+                "content": "As founder of Katz Architecture, David has more than 30 years of experience in the fields of architecture and design. Over this time, he has contributed to a wide range of residential, commercial, retail, institutional, urban design and preservation projects throughout the United States and abroad. David received a Bachelor of Architecture from Cooper Union and a Masters of Architecture in Italy through the University of Washington Italian Studies Program where he received the school’s Outstanding Thesis Award. His work has appeared in multiple publications including House Beautiful, Building Design + Construction, New York Spaces, the New York Post and the New York Times. In addition to his professional practice, David has been a guest critic at the University of Washington, New Jersey institute of Technology and Pratt institute. While an instructor with the Institute of Design and Construction, David developed and taught classes in Materials and Methods of Construction. As an invited columnist for BrickUnderground, David has written numerous articles addressing the complexities of residential renovation in New York City. Licensed in New York, New Jersey, and Connecticut, David has been a member of the American Institute of Architects since 1994."
             },
             {
-                "title": "Vanessa Sanchez",
-                "subtitle": "Project Designer",
-                "img": '02',
-                "content": "Vanessa received a Bachelor of Arts in Architecture from the University of California, Berkeley \
-                in 2004 and is certified in Social Economic Environmental Design (SEED) from the Public Interest Design \
-                Institute. Her New York experience includes residential, hospitality and educational projects with Halpern \
-                Architects and Robert A.M. Stern. As a project designer at KA, Vanessa has been instrumental in the completion \
-                of multiple residential and commercial gut renovation projects. In addition to her architectural work, Vanessa \
-                has volunteered her time for multiple causes including Big Brothers Big Sisters of New York, New York Cares \
-                and Open Architecture New York."
+                "title": "Marina Morrone",
+                "subtitle": "Office Manager",
+                "img": '08',
+                "content": "Marina received a Bachelor of Arts in Communication from Loyola University in 2007, prior to which \
+                she studied at The American University of Paris. Her professional experience includes office administration for \
+                the financial services industry as well as not-for-profit organizations. At KA, Marina manages the office and serves \
+                as staff bookkeeper. And just in case KA opens outposts in Paris and Rome, Marina is fluent in French and Italian."
             },
             {
                 "title": "Eric Owes",
@@ -87,13 +73,16 @@ var dic =
                 Marvin is a governing board member of Intersections International of the Collegiate Churches of New York."
             },
             {
-                "title": "Marina Morrone",
-                "subtitle": "Office Manager",
-                "img": '08',
-                "content": "Marina received a Bachelor of Arts in Communication from Loyola University in 2007, prior to which \
-                she studied at The American University of Paris. Her professional experience includes office administration for \
-                the financial services industry as well as not-for-profit organizations. At KA, Marina manages the office and serves \
-                as staff bookkeeper. And just in case KA opens outposts in Paris and Rome, Marina is fluent in French and Italian."
+                "title": "Vanessa Sanchez",
+                "subtitle": "Project Designer",
+                "img": '02',
+                "content": "Vanessa received a Bachelor of Arts in Architecture from the University of California, Berkeley \
+                in 2004 and is certified in Social Economic Environmental Design (SEED) from the Public Interest Design \
+                Institute. Her New York experience includes residential, hospitality and educational projects with Halpern \
+                Architects and Robert A.M. Stern. As a project designer at KA, Vanessa has been instrumental in the completion \
+                of multiple residential and commercial gut renovation projects. In addition to her architectural work, Vanessa \
+                has volunteered her time for multiple causes including Big Brothers Big Sisters of New York, New York Cares \
+                and Open Architecture New York."
             },
             {
                 "title": "Katharine Gunn",
@@ -121,10 +110,10 @@ var dic =
         ],
         "management-properties": [
             {
-                "title": "New York Properties",
+                "title": "Managed Properties",
                 "subtitle": "Work",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
+                "content": "Test. Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
                             aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
