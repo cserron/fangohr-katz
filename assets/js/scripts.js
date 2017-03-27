@@ -114,12 +114,12 @@ var dic =
                 "title": "240 Centre Street",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "<ul>
-                	<li>Name: Police Building</li>
-                	<li>Building Type: Residential Co-op, 55 units </li>
-                	<li>Services Provided: Building Architect Services</li>
-                </ul>
-                </p>
+                "content": "<ul> \
+                	<li>Name: Police Building</li> \
+                	<li>Building Type: Residential Co-op, 55 units </li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
                 <p>10-story 1923 Landmark District building designed by Carrere and Hastings, who also designed the New York Public Library. Gut renovation of lobby, new entry door and awning, design of new mailroom, sidewalk replacement, renovation of common halls and stairways, refurbishment of backyard access stair, design and installation of common backyard space including new stone deck and structural concrete retaining wall.</p>"
             },
             {
