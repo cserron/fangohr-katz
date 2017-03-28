@@ -127,7 +127,7 @@ var dic =
                 "img": "01",
                 "content": "<ul> \
                 	<li>Building Type: Residential Co-op, 183 units</li> \
-                	<li>Services Provided: Building Architect Services</li> \ 
+                	<li>Services Provided: Building Architect Services</li> \
                 </ul> \
                 <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.
                 </p>"
