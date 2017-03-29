@@ -2,7 +2,7 @@
 <ul class="cover-ul">
 {% for item in site.data.nav.cover %}
     <li class="check-list">
-        <label for="cover-checkbox{{ forloop.index }}" class="secondary item-title"><a href="#{{ forloop.index }}">{{ item.name }}</a></label>
+        <label for="cover-checkbox{{ forloop.index }}" class="secondary item-title">{{ item.name }}</label>
     </li>
 {% endfor %}
 </ul> 
