@@ -137,113 +137,177 @@ var dic =
                 "title": "46 West 95th Street",
                 "subtitle": "New York, NY",
                 "img": "03",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
-                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "705/711 Greenwich Street",
                 "subtitle": "New York, NY",
                 "img": "04",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
-                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "170 East 78th Street",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
-                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "El Museo Del Barrio",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
-                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "Gramercy Townhouse",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
-                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "107 West 25th Street",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
-                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "52 Thomas Street",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
-                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "Midtown Landmark Building Enlargement",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
-                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "860 Grand Councourse",
                 "subtitle": "Bronx, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
-                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "111 Hicks Street",
                 "subtitle": "Brooklyn, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
-                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "4 West 16th Street",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
-                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "27 Bleecker Street",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
-                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "147 West 22nd Street",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
-                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "12 West 18th Street",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
-                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "177 Duane Street",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
-                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "78 Broadway To Come",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
-                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
         ]
     };
