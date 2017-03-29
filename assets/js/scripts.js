@@ -113,7 +113,7 @@ var dic =
             {
                 "title": "240 Centre Street",
                 "subtitle": "New York, NY",
-                "img": "01",
+                "img": "property1",
                 "content": "<ul> \
                 	<li>Name: Police Building</li> \
                 	<li>Building Type: Residential Co-op, 55 units </li> \
