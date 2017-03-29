@@ -388,7 +388,7 @@ function showDetail(target, idSection, detailItem) {
     $('#'+target+' .font-subtitle-detail').html(dic[idSection][detailItem]['subtitle']);
     var imgSrc = $('#'+target+' .team-member-image').attr('src');
     imgSrc = extractImageRoot(imgSrc);
-    imgSrc = imgSrc + '/' + idSection+'/'+dic[idSection][detailItem]['img'] + '.png';
+    imgSrc = imgSrc + '/' + idSection+'/'+dic[idSection][detailItem]['img'] + '.jpg';
     $('#'+target+' .team-member-image').attr('src', imgSrc);
     $('#'+target+' .team-member-image').attr('alt', dic[idSection][detailItem]['title']);
     $('#'+target+' .font-content').html(dic[idSection][detailItem]['content']);
