@@ -1,0 +1,47 @@
+<div class="topic topic-hidden topic-{{include.topic-class}} menu">{% include 2_menu.html %}</div>
+
+{% include topic-cover.html 
+    topic-class=include.topic-class
+    title=site.data.building-interior.title
+    image=site.data.building-interior.image 
+%}
+
+<div class="topic topic-{{include.topic-class}} container-fluid">
+    
+        <h2 class="font-title hidden-xs-down">{{site.data.building-interior.title}}</h2>
+        <div class="text-content">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="font-subtitle">{{site.data.building-interior.title_1}}</h3>
+                    <p class="font-content p-content">{{site.data.building-interior.block_1}}</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="font-subtitle">{{site.data.building-interior.title_2}}</h3>
+                    <ul>
+                        {% for item in site.data.building-interior.block_2 %}
+                        <li class="font-content">{{item.item}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+</div>
+
+<div class="topic topic-{{include.topic-class}} container-fluid">
+    <div class="row">
+        {% for item in site.data.building-interior.slides %}
+            <div class="col-6 col-sm-2">
+                <a href="#" data-target="#carousel1" data-slide-to="1" class="js-open-carousel">
+                    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/{{{item.thumbnail}}" alt="{item.info}}" class="img-fluid property-image">
+                    <div class="detail-tooltip">{{item.info}}</div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<!--<div class="topic-building-interior">
+    <div class="slide"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/1.jpg"></div>
+	<div class="slide"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/2.jpg"></div>
+	<div class="slide"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/3.jpg"></div>
+</div>-->
