@@ -1,10 +1,10 @@
 
 <div class="topic topic-hidden topic-renovation menu">{% include 2_menu.html %}</div>
-
+{% assign cover_img = site.url | append: site.baseurl | append: site.data.renovation.image %}
 {% include topic-cover.html 
     topic-class="renovation"
     title=site.data.renovation.title
-    image=site.data.renovation.image 
+    image=cover_img
 %}
 
 <div class="topic topic-renovation">4</div>
