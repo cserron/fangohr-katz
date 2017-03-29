@@ -68,3 +68,18 @@
   }
 
 }
+
+.navigation-down{
+  width: 100%;
+  .back-to-menu, .next-section-anchor{
+    position: absolute;
+    cursor:pointer;
+    bottom: 70px;
+    padding: 6.5px 3px;
+    
+    &.white{
+      background: rgba(256,256,256, .4);
+    }
+  }
+  
+}

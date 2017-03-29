@@ -50,6 +50,14 @@ function check(elem) {
     console.log(elem);
 }
 
+function moveSectionDown() {
+    $.fn.fullpage.moveSectionDown();
+}
+
+function moveToMenu() {
+    $.fn.fullpage.moveTo('intro');
+}
+
 function initFP(topicClass = '.topic') {
 
     $('#wrapper').fullpage({

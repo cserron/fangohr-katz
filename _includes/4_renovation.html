@@ -1,5 +1,5 @@
 
-<div class="topic topic-hidden topic-renovation menu">{% include 2_menu.html %}</div>
+<div class="topic topic-hidden topic-{{include.topic-class}} menu">{% include 2_menu.html %}</div>
 {% assign cover_img = site.url | append: site.baseurl | append: site.data.renovation.image %}
 {% include topic-cover.html 
     topic-class="renovation"
@@ -7,5 +7,10 @@
     image=cover_img
 %}
 
-<div class="topic topic-renovation">4</div>
-<div class="topic topic-renovation">5</div>
+<div class="topic topic-{{include.topic-class}} container-fluid">
+    <div class="row">
+
+        {% include _parts/back-to-menu.html %}
+        
+    </div>
+</div>
