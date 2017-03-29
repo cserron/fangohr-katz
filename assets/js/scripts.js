@@ -126,7 +126,12 @@ var dic =
                 "title": "243 West End Avenue",
                 "subtitle": "New York, NY",
                 "img": "02",
-                "content": "lorem"
+                "content": "<ul> \
+                	<li>Building Type: Residential Co-op, 183 units</li> \
+                	<li>Services Provided: Building Architect Services</li> \
+                </ul>\
+                </p>\
+                <p>15-story 1925 Landmark District building designed by Emery Roth. Design and construction review services on behalf of the Board to assess proposed Shareholder renovation work for code compliance and impact on building infrastructure.</p>"
             },
             {
                 "title": "46 West 95th Street",
