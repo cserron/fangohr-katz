@@ -12,7 +12,7 @@ var dic =
             {
                 "title": "Marina Morrone",
                 "subtitle": "Office Manager",
-                "img": '08',
+                "img": '02',
                 "content": "Marina received a Bachelor of Arts in Communication from Loyola University in 2007, prior to which \
                 she studied at The American University of Paris. Her professional experience includes office administration for \
                 the financial services industry as well as not-for-profit organizations. At KA, Marina manages the office and serves \
@@ -75,7 +75,7 @@ var dic =
             {
                 "title": "Vanessa Sanchez",
                 "subtitle": "Project Designer",
-                "img": '02',
+                "img": '08',
                 "content": "Vanessa received a Bachelor of Arts in Architecture from the University of California, Berkeley \
                 in 2004 and is certified in Social Economic Environmental Design (SEED) from the Public Interest Design \
                 Institute. Her New York experience includes residential, hospitality and educational projects with Halpern \
