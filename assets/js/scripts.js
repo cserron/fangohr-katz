@@ -125,74 +125,116 @@ var dic =
             {
                 "title": "243 West End Avenue",
                 "subtitle": "New York, NY",
-                "img": "01",
+                "img": "02",
                 "content": "lorem"
             },
             {
-                "title": "New York Properties",
+                "title": "46 West 95th Street",
+                "subtitle": "New York, NY",
+                "img": "03",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
+                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "705/711 Greenwich Street",
+                "subtitle": "New York, NY",
+                "img": "04",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "170 East 78th Street",
                 "subtitle": "New York, NY",
                 "img": "01",
                 "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
                             aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "New York Properties",
+                "title": "El Museo Del Barrio",
                 "subtitle": "New York, NY",
                 "img": "01",
                 "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
                             dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "New York Properties",
+                "title": "Gramercy Townhouse",
                 "subtitle": "New York, NY",
                 "img": "01",
                 "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
                             aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "New York Properties",
+                "title": "107 West 25th Street",
                 "subtitle": "New York, NY",
                 "img": "01",
                 "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
                             dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "New York Properties",
+                "title": "52 Thomas Street",
                 "subtitle": "New York, NY",
                 "img": "01",
                 "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
                             aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "New York Properties",
+                "title": "Midtown Landmark Building Enlargement",
                 "subtitle": "New York, NY",
                 "img": "01",
                 "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
                             dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "New York Properties",
-                "subtitle": "New York, NY",
+                "title": "860 Grand Councourse",
+                "subtitle": "Bronx, NY",
                 "img": "01",
                 "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
                             aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "New York Properties",
+                "title": "111 Hicks Street",
+                "subtitle": "Brooklyn, NY",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "4 West 16th Street",
                 "subtitle": "New York, NY",
                 "img": "01",
                 "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
                             dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "New York Properties",
+                "title": "27 Bleecker Street",
                 "subtitle": "New York, NY",
                 "img": "01",
-                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna \
-                            aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
             },
             {
-                "title": "New York Properties",
+                "title": "147 West 22nd Street",
+                "subtitle": "New York, NY",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "12 West 18th Street",
+                "subtitle": "New York, NY",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "177 Duane Street",
+                "subtitle": "New York, NY",
+                "img": "01",
+                "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
+                            dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper suscipit."
+            },
+            {
+                "title": "78 Broadway To Come",
                 "subtitle": "New York, NY",
                 "img": "01",
                 "content": "Info. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet \
