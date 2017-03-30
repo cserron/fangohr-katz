@@ -7,43 +7,18 @@
     image= cover_img
 %}
 
-<div class="topic topic-{{include.topic-class}} container-fluid">
-    
-        <h2 class="font-title hidden-xs-down">{{site.data.building-interior.title}}</h2>
-        <div class="text-content">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="font-subtitle">{{site.data.building-interior.title_1}}</h3>
-                    <p class="font-content p-content">{{site.data.building-interior.block_1}}</p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="font-subtitle">{{site.data.building-interior.title_2}}</h3>
-                    <ul>
-                        {% for item in site.data.building-interior.block_2 %}
-                        <li class="font-content">{{item.item}}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    
-</div>
+{% include _parts/content-two-cols.html 
+    topic-class=include.topic-class
+    data=site.data.building-interior
+%}
+
 
 <div class="topic topic-{{include.topic-class}} container-fluid">
     
     <h2 class="font-title hidden-xs-down">{{site.data.building-interior.title}}</h2>
     <div class="text-content">
         <div class="row gallery-container">
-            <!-- Gallery -->
-            {% for item in site.data.building-interior.slides %}
-            <div class="col-6 col-sm-2">
-            <div onclick="moveTo(4, {{ forloop.index }},'.overlap-gallery' )">
-                    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/{{{item.thumbnail}}" alt="{item.info}}" class="img-fluid property-image">
-                    <div class="detail-tooltip">{{item.info}}</div>
-                </div>
-            </div>
-            {% endfor %}
-
+            
             <!-- Slideshow -->
             <div class="overlap-gallery container-fluid hidden">
                 
@@ -59,6 +34,16 @@
                     </span>
                 </div>
             </div>
+
+            <!-- Gallery -->
+            {% for item in site.data.building-interior.slides %}
+            <div class="col-6 col-sm-2">
+            <div onclick="moveTo(4, {{ forloop.index }},'.overlap-gallery' )">
+                    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/{{{item.thumbnail}}" alt="{item.info}}" class="img-fluid property-image">
+                    <div class="detail-tooltip">{{item.info}}</div>
+                </div>
+            </div>
+            {% endfor %}
 
         </div>
     </div>

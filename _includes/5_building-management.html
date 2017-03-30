@@ -1,10 +1,15 @@
-<div class="topic topic-hidden topic-building-management menu">{% include 2_menu.html %}</div>
-{% assign cover_img = site.url | append: site.baseurl | append: site.data.topic-building-management.image %}
+<div class="topic topic-hidden topic-{{include.topic-class}} menu">{% include 2_menu.html %}</div>
+{% assign cover_img = site.url | append: site.baseurl | append: site.data.building-management.image %}
 
 {% include _parts/topic-cover.html 
     topic-class=include.topic-class
     title=site.data.building-management.title
     image= cover_img
+%}
+
+{% include _parts/content-two-cols.html 
+    topic-class=include.topic-class
+    data=site.data.building-management
 %}
 
 
