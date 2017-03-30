@@ -25,3 +25,34 @@
 .gallery-container{
     padding-top: 120px;
 }
+
+.grid-item{
+    margin: 15px 0;
+    position: relative;
+    overflow: hidden;
+    .detail-tooltip{
+        position: absolute;
+        opacity:1;
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        text-align: center;
+        font-size: 8px;
+        position: absolute;
+        width: 100%;
+        transition: all 1s ease;
+        line-height: 1.25;
+        padding: 5px;
+        @include respond-to(sm) {
+            font-size: 14px;
+        }
+    }
+
+    &:hover{
+        cursor: pointer;
+        .detail-tooltip{
+            transition: all 1s ease;
+            opacity:1;
+            bottom:0;
+        }
+    }
+}
