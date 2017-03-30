@@ -1,10 +1,10 @@
 cover:
 
-- {name: For Management Companies, url: '1'}
-- {name: For Co-Op & Condo-Boards, url: '2'}
-- {name: For Building Managers, url: '3'}
-- {name: For Homeowners,url: '4'}
-- {name: Peace of Mind,url: '5'}
+- {name: For Management Companies}
+- {name: For Co-Op & Condo-Boards}
+- {name: For Building Managers}
+- {name: For Homeowners}
+- {name: Peace of Mind}
 
 
 menu:
@@ -14,5 +14,5 @@ menu:
 - {name: Building Management Support, topic: 'building-management'}
 - {name: Zoning & Code Consultation, topic: 'zoning'}
 - {name: Peace of Mind, topic: 'peace'}
-- {name: Contact,url: '6'}
+- {name: Contact, topic: 'contact'}
 
