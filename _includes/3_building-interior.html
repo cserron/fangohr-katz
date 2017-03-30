@@ -1,7 +1,7 @@
 <div class="topic topic-hidden topic-{{include.topic-class}} menu">{% include 2_menu.html %}</div>
 {% assign cover_img = site.url | append: site.baseurl | append: site.data.building-interior.image %}
 
-{% include topic-cover.html 
+{% include _parts/topic-cover.html 
     topic-class=include.topic-class
     title=site.data.building-interior.title
     image= cover_img
@@ -30,27 +30,38 @@
 </div>
 
 <div class="topic topic-{{include.topic-class}} container-fluid">
-    <div class="row">
-        <!-- Gallery -->
-        {% for item in site.data.building-interior.slides %}
-        <div class="col-6 col-sm-2">
-            <a href="#" data-target="#carousel1" data-slide-to="1" class="js-open-carousel">
-                <img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/{{{item.thumbnail}}" alt="{item.info}}" class="img-fluid property-image">
-                <div class="detail-tooltip">{{item.info}}</div>
-            </a>
-        </div>
-        {% endfor %}
-
-        <!-- Slideshow -->
-        <div class="overlap-gallery container-fluid">
-        {% for item in site.data.building-interior.slides %}
-            <div class="slide">
-                <img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/{{{item.thumbnail}}" alt="{item.info}}" class="img-fluid property-image">
+    
+    <h2 class="font-title hidden-xs-down">{{site.data.building-interior.title}}</h2>
+    <div class="text-content">
+        <div class="row gallery-container">
+            <!-- Gallery -->
+            {% for item in site.data.building-interior.slides %}
+            <div class="col-6 col-sm-2">
+            <div onclick="moveTo(4, {{ forloop.index }},'.overlap-gallery' )">
+                    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/{{{item.thumbnail}}" alt="{item.info}}" class="img-fluid property-image">
+                    <div class="detail-tooltip">{{item.info}}</div>
+                </div>
             </div>
-        {% endfor %}
-        </div>
+            {% endfor %}
 
-        
+            <!-- Slideshow -->
+            <div class="overlap-gallery container-fluid hidden">
+                
+                {% for item in site.data.building-interior.slides %}
+                    <div class="slide">
+                        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/{{{item.thumbnail}}" alt="{item.info}}" class="img-fluid property-image">
+                    </div>
+                {% endfor %}
+
+                <div class="navigation-down text-center" onclick="closeGallery(this)">
+                    <span  class="back-to-menu white">
+                        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/close-blue.svg" alt="Menu">
+                    </span>
+                </div>
+            </div>
+
+        </div>
     </div>
+     {% include _parts/back-to-menu.html %}
 </div>
 

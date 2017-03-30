@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {% include head.html %}
+  {% include _parts/head.html %}
   <body>
 
-    {% include header.html %}
+    {% include _parts/header.html %}
     <section id="wrapper">
       
       <div class="topic topic-cover cover">{% include 1_cover.html %}</div>
@@ -14,13 +14,6 @@
       {% include 5_building-management.html topic-class="building-management" %}
       {% include 6_zoning.html topic-class="zoning" %}
 
-      
-      <!--<div class="topic">6</div>
-      <div class="topic">7</div>
-      <div class="topic">8</div>
-      <div class="topic">9</div>
-      <div class="topic">10</div>
-    -->
 
     </section>
 

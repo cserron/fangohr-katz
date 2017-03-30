@@ -1,7 +1,7 @@
 
 <div class="topic topic-hidden topic-{{include.topic-class}} menu">{% include 2_menu.html %}</div>
 {% assign cover_img = site.url | append: site.baseurl | append: site.data.renovation.image %}
-{% include topic-cover.html 
+{% include _parts/topic-cover.html 
     topic-class="renovation"
     title=site.data.renovation.title
     image=cover_img

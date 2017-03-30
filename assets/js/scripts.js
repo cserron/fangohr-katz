@@ -38,8 +38,9 @@ $(document).ready(function () {
     });
 });
 
-
+// ====================================================
 // Function to check off the checkboxes
+// ====================================================
 function check(elem) {
 
     $(elem).each(function () {
@@ -50,6 +51,21 @@ function check(elem) {
     console.log(elem);
 }
 
+// ====================================================
+// Functions to move ==================================
+// ====================================================
+function closeGallery(e) {
+    $(e).parent().addClass('hidden');
+}
+
+function moveTo(sectionNumber, slideNumber, slideContainer) {
+    
+    var secN = parseInt(sectionNumber, 10);
+    var sldN = parseInt(slideNumber, 10) - 1;
+    $(slideContainer).removeClass('hidden');
+    $.fn.fullpage.moveTo(secN, sldN);
+    
+}
 function moveSectionDown() {
     $.fn.fullpage.moveSectionDown();
 }
@@ -64,8 +80,8 @@ function initFP(topicClass = '.topic') {
 
         //Navigation
         // menu: '#menu',
-        lockAnchors: false,
-        anchors: ['intro', 'home', 'building-interior', 'renovation', 'building-management'],
+        lockAnchors: true,
+        anchors: ['intro', 'home'],//, 'building-interior', 'renovation', 'building-management'
         navigation: false,
         navigationPosition: 'right',
         navigationTooltips: ['firstSlide', 'secondSlide'],
