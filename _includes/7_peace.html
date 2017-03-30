@@ -1,9 +1,12 @@
 <div class="topic topic-hidden topic-{{ include.topic-class }} menu">{% include 2_menu.html %}</div>
+{% assign cover_img = site.url | append: site.baseurl | append: site.data.peace.image %}
+
 {% include _parts/topic-cover.html 
     topic-class=include.topic-class
     title=site.data.peace.title
-    image=site.data.peace.image 
+    image= cover_img
 %}
+
 
 <div class="topic-{{ include.topic-class }}">4</div>
 <div class="topic topic-{{include.topic-class}} container-fluid">
