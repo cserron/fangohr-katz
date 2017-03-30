@@ -3,7 +3,7 @@ $(document).ready(function () {
     // ======================================================
     // Main bootstrap of functions ==========================
     // ======================================================
-    initFP('.topic');
+    initFP('.topic-home');
 
 
     // Remove the cover

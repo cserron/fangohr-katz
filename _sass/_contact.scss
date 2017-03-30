@@ -1,4 +1,5 @@
 .contact-form {
+  font-family: Miller-TextRoman;
   background-color: _palette(_katz-primary) !important;
   &, .font-subtitle, .font-title{
       color: _palette(_katz-secondary) !important;
@@ -63,6 +64,7 @@
     background-color: _palette(_katz-primary);
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: Miller-TextRoman;
     cursor: pointer;
     &:hover {
       background-color: _palette(_katz-third);

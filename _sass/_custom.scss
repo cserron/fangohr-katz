@@ -47,3 +47,7 @@ a{
 .secondary {
   color: _palette(_katz-secondary) !important;
 }
+html{
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
