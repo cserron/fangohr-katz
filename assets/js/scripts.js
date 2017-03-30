@@ -54,16 +54,23 @@ function check(elem) {
 // ====================================================
 // Functions to move ==================================
 // ====================================================
-function closeGallery(e) {
+function closeGallery(e,backToSection) {
+    $.fn.fullpage.silentMoveTo(backToSection);    
     $(e).parent().addClass('hidden');
 }
 
-function moveTo(sectionNumber, slideNumber, slideContainer) {
+function moveTo(sectionNumber, slideNumber, slideContainer, silent) {
     
     var secN = parseInt(sectionNumber, 10);
     var sldN = parseInt(slideNumber, 10) - 1;
     $(slideContainer).removeClass('hidden');
-    $.fn.fullpage.moveTo(secN, sldN);
+    if (silent) {
+        $.fn.fullpage.silentMoveTo(secN, sldN);
+    }
+    else {
+        $.fn.fullpage.moveTo(secN, sldN);    
+    }
+    
     
 }
 function moveSectionDown() {
@@ -131,7 +138,7 @@ function initFP(topicClass = '.topic') {
         // fixedElements: '#menu, .footer',
         responsiveWidth: 768,
         responsiveHeight: 0,
-        responsiveSlides: false,
+        responsiveSlides: true,
         parallax: false,
         parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
 
