@@ -16,7 +16,7 @@
 <div class="topic topic-{{include.topic-class}} container-fluid">
     
     <h2 class="font-title hidden-xs-down">{{site.data.building-interior.title}}</h2>
-    <div class="text-content gallery-container">
+    <div class="text-content">
             <div class="row">
                 <!-- Gallery -->
                 {% for item in site.data.building-interior.slides %}
@@ -35,7 +35,7 @@
      {% include _parts/back-to-menu.html %}
 </div>
 
-<div class="topic topic-{{include.topic-class}} container-fluid fp-auto-height ignore">
+<div class="topic topic-{{include.topic-class}} container-fluid gallery-container ignore">
 
     <div class="overlap-gallery container-fluid hidden">  
                 {% for item in site.data.building-interior.slides %}

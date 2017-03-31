@@ -57,6 +57,7 @@ function check(elem) {
 function closeGallery(e,backToSection) {
     $.fn.fullpage.silentMoveTo(backToSection);    
     $(e).parent().addClass('hidden');
+    $('.gallery-container').addClass('ignore');
 }
 
 function moveTo(sectionNumber, slideNumber, slideContainer, silent) {
@@ -64,6 +65,8 @@ function moveTo(sectionNumber, slideNumber, slideContainer, silent) {
     var secN = parseInt(sectionNumber, 10);
     var sldN = parseInt(slideNumber, 10) - 1;
     $(slideContainer).removeClass('hidden');
+    $('.gallery-container').removeClass('ignore');
+    
     if (silent) {
         $.fn.fullpage.silentMoveTo(secN, sldN);
     }
@@ -156,7 +159,7 @@ function initFP(topicClass = '.topic') {
                 var destination = (direction === 'down') ? nextIndex + 1 : nextIndex - 1
                 return false;
                 // $.fn.fullpage.moveTo(destination); doesnt work
-                $.fn.fullpage.silentMoveTo(1);
+                // $.fn.fullpage.silentMoveTo(1);
                 
             }
         },
