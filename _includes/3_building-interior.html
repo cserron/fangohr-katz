@@ -22,6 +22,7 @@
                 {% for item in site.data.building-interior.slides %}
                 <div class="col-6 col-sm-2">
                     <div class="grid-item" onclick="moveTo(5, {{ forloop.index }},'.overlap-gallery', true )">
+                        <span class="blue-filter"></span>
                         <img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/{{{item.thumbnail}}" alt="{item.info}}" class="img-fluid property-image">
                         <div class="detail-tooltip">{{item.info}}</div>
                     </div>
@@ -34,7 +35,7 @@
      {% include _parts/back-to-menu.html %}
 </div>
 
-<div class="topic topic-{{include.topic-class}} container-fluid">
+<div class="topic topic-{{include.topic-class}} container-fluid fp-auto-height ignore">
 
     <div class="overlap-gallery container-fluid hidden">  
                 {% for item in site.data.building-interior.slides %}

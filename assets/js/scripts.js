@@ -150,13 +150,18 @@ function initFP(topicClass = '.topic') {
 
         //events
         onLeave: function (index, nextIndex, direction) {
-            console.log('i:', index);
+           var destinationToIgnore = $('.topic').eq(nextIndex).hasClass('ignore');
+            console.log(destinationToIgnore);
+            if(destinationToIgnore){
+                var destination = (direction === 'down') ? nextIndex + 1 : nextIndex - 1
+                return false;
+                // $.fn.fullpage.moveTo(destination); doesnt work
+                $.fn.fullpage.silentMoveTo(1);
+                
+            }
         },
         afterLoad: function (anchorLink, index) {
-
-            // if (anchorLink === 'home') {
-            //    $('.topic-cover').addClass('topic-hidden');
-            // }
+           
         },
         afterRender: function () { },
         afterResize: function () { },
