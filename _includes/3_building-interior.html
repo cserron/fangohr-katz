@@ -38,16 +38,15 @@
 <div class="topic topic-{{include.topic-class}} container-fluid gallery-container ignore">
 
     <div class="overlap-gallery container-fluid hidden">  
-                {% for item in site.data.building-interior.slides %}
-                    <div class="slide">
-                        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/{{{item.thumbnail}}" alt="{item.info}}" class="img-fluid property-image">
-                    </div>
-                {% endfor %}
-
-                <div class="navigation-down text-center" onclick="closeGallery(this, 4)">
-                    <span  class="back-to-menu white">
-                        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/close-blue.svg" alt="Menu">
-                    </span>
-                </div>
+        {% for item in site.data.building-interior.slides %}
+            <div class="slide">
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/images/building-interior/slides/{{{item.thumbnail}}" alt="{item.info}}" class="img-fluid property-image">
             </div>
+        {% endfor %}
+    </div>
+    <div class="navigation-down text-center" onclick="closeGallery(this, 4)">
+        <span  class="back-to-menu white">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/images/close-blue.svg" alt="Menu">
+        </span>
+    </div>
 </div>

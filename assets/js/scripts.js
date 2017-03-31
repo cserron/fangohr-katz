@@ -141,7 +141,7 @@ function initFP(topicClass = '.topic') {
         // fixedElements: '#menu, .footer',
         responsiveWidth: 768,
         responsiveHeight: 0,
-        responsiveSlides: true,
+        responsiveSlides: false,
         parallax: false,
         parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
 
