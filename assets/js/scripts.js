@@ -55,7 +55,7 @@ function check(elem) {
 // Functions to move ==================================
 // ====================================================
 function closeGallery(e,backToSection) {
-    $.fn.fullpage.silentMoveToç(backToSection);    
+    $.fn.fullpage.silentMoveTo(backToSection);    
     $(e).parent().addClass('hidden');
 }
 
