@@ -2,6 +2,7 @@
 
 .check-list {
   list-style-type: none;
+
 }
 
 .menu.fixed{
@@ -27,13 +28,22 @@
 
 }
 
+.menu-ul{
+  .item-title{
+     &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+.cover{
+  cursor: pointer;
+}
 .cover-ul, .menu-ul{
   padding-left:0;
   
   .item-title{
-    &:hover {
-      opacity: .8;
-    }
+   
 
     letter-spacing: -1px;
     font-size: 24px;
